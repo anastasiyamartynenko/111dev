@@ -1,0 +1,32 @@
+
+@media (max-width: 768px) {    
+
+    .item-serf-cont {
+        width: 100%;
+    }
+    .item-serf-li {
+        padding-bottom: 24px;
+    }
+    .title-sertificat {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .item-serf-cont .item-serf {
+        margin: 0;
+    }
+     .text-item-srf {
+        text-align: left;
+        width: 300px;
+        padding-left: 18px;
+    }
+    .item-serf-cont .item-serf {
+        width: 46px;
+        height: 46px;
+        font-size: 17px;
+        border-radius: 15px;
+    }
+    .item-serf img {
+        width: 24px;
+        height: 24px;
+    }    
+}

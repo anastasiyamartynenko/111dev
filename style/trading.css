@@ -1,0 +1,385 @@
+*{
+  -webkit-font-smoothing: antialiased;
+  
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none;
+}
+.section2-trading{
+  position: relative;
+}
+
+.section2-trading::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  
+  height: 100px;
+  -webkit-border-bottom-right-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -moz-border-radius-bottomright: 16px;
+  -moz-border-radius-bottomleft: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.section-after-trading{
+  background-image: url(../assets/img/map.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+  width: 100%;
+
+  position: relative;
+}
+
+.intro-iphone-trading-new{
+  background-image: url(../assets/img/inrto-iphone-trading-new.png);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.intro-iphone-trading-1{
+  background-image: url(../assets/img/intro-iphone-2.png);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+/* .section-after-trading::after{
+  position: absolute;
+  width: 100%;
+  height: 850px;
+  top: -60px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  content: '';
+
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  transform-origin: top right;
+  transform: skewY(-7deg);
+  z-index: -1;
+} */
+
+.ji-block-trading2-min{
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.trading-with-footer-after::after{
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  top: 1410px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  content: '';
+
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  transform-origin: top right;
+  transform: skewY(-7deg);
+  z-index: -1;
+}
+
+.map{
+  width: 100%;
+}
+
+.container-overflow{
+  overflow: scroll;
+  padding: 24px 0px; 
+  
+}
+
+.container-overflow-secondary{
+  display: flex;
+
+  width: 6330px;
+  overflow-x: scroll;
+  padding: 50px 0px;
+
+  transform: translate3d(0px, 0px, 0px);
+  animation: 160s linear infinite normal none fortransfromcontainer;
+
+ 
+}
+
+
+
+.ji-block-trading{ 
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+
+  padding: 24px 20px;
+
+  background: #fafafa;
+  border-radius: 16px;
+}
+
+@keyframes fortransfromcontainer{
+  100%{
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+
+.container-overflow-secondary::-webkit-scrollbar {
+  display: none;
+}
+
+.ji-scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.ji-block-trading2-min{
+  height: 100%;
+}
+
+.ji-block-trading-min{
+  max-width: 240px;
+  min-width: 240px;
+  height: 100%;
+}
+
+.three-step-info-img1{
+  background-image: url(../assets/img/three-step-info-img1.png);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 176px;
+  width: 100%;
+}
+
+.three-step-info-img2{
+  background-image: url(../assets/img/three-step-info-img2.png);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 180px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.three-step-info-img3{
+  background-image: url(../assets/img/chart-top.svg);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.three-step-border{
+  background-color: #e8e8e88c;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  padding: 28px 24px 0px;
+
+  height: 100%;
+}
+
+.three-step-border2{
+  border: 0.5px solid #bdbdbdf5;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  height: 100%;
+}
+
+.three-step-border3{
+  border: 0.5px solid #bdbdbdf5;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 28px 24px;
+
+  height: 100%;
+}
+
+/* three step info */
+
+.three-step-info-top{
+  padding: 4px 8px;
+  background: linear-gradient(90deg, #FD746C 0%, #FF9068 100%);
+  border-radius: 24px;
+
+  text-transform: uppercase;
+}
+
+.three-step-head-pd{
+  background: #F8F8F8;
+  border-radius: 24px;
+  color: #2A2A37;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.three-step-head-pd:hover{
+  background: #FF6700;
+  color: white;
+}
+
+.three-step-head-pd.ji-active{
+  background: #FF6700;
+  color: white;
+}
+
+.ji-new-investor-trading{
+  width: 100%;
+}
+
+.ji-new-investor-trading{
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  border: 0.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  padding: 28px 24px;
+}
+
+/* rounded prefooter  block*/
+/* .section3t{
+  position: relative;
+}
+
+.section3t::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  
+  height: 50px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+} */
+
+.commission_bg{
+  background-image: url(../assets/img/commision.png);
+  height: 478px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.how-open_bg{
+  background-image: url(../assets/img/how_top_open.png);
+  height: 541px;
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+
+@media (max-width: 1124px){
+  .ji-block-trading-min{
+    margin-top: 60px;
+    height: auto;
+  }
+  .ps-3.pe-3.flex-grow{
+    margin-top: 20px;
+  }
+
+  .container-overflow{
+    padding: 20px 0px;
+  }
+
+  .container-overflow-secondary{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px){
+  .section2-trading::before{
+    display: none;
+  }
+
+ 
+  .commission_bg{
+    height: 400px;
+  }
+  
+  .how-open_bg{
+    height: 570px;
+  }
+  
+  .three-step-head-pd:hover{
+    background: #FF6700;
+    color: white;
+  }
+  .ji-container-header{
+    padding: 13px;
+  }
+  .section-after-trading::after{
+    height: 1200px;
+  }
+  .trading-img{
+    margin-left: auto;
+  }
+  .trading-img2{
+    margin-left: auto;
+  }
+  .trading-img3{
+    margin-left: auto;
+  }
+
+  .ji-block-trading2-min{
+    min-width: 300px;
+  }
+  .section-after-trading{
+    background-image: url();
+  }
+
+  .map-phone{
+    background-image: url(../assets/img/map.svg);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  .three-step-border2{
+    border: 0.5px solid #8b8b8b;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 28px 24px;
+  }
+  
+}
+
+
+@media (max-width: 570px){
+  
+  .commission_bg{
+    height: 300px;
+  }
+  
+  .how-open_bg{
+    height: 370px;
+  }
+
+  ol, ul{
+    padding-left: 0!important;
+  }
+  
+}
+
+
+@media (max-width: 320px){
+  .ji-block-trading-min{
+    min-width: 250px;
+  }
+  
+  .ji-block-trading2-min{
+    min-width: 250px;
+  }
+  .footer-iphones{
+    height: 300px;
+  }
+}

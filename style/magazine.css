@@ -1,0 +1,75 @@
+.themes-dropdown__link{
+    position:  relative;
+    display: inline-block;
+    background-color: #F8F9FA;
+    border:  1px solid #C6C6CC;
+    padding: 8px 35px 8px 20px;
+    border-radius: 4px;
+    transition: .3s;
+    font-weight: 500;
+    cursor: pointer;
+}
+.themes-dropdown__link:hover{
+    background-color: #C6C6CC;
+}
+.themes-dropdown__link:after
+{
+    font-size: 18px;
+  content: '\276F';
+  position: absolute;
+  right: 14px;
+  color: #403947;
+  
+  transform: rotate(90deg);
+  transition: .4s;
+}
+.themes-dropdown__link.active::after
+{
+  content: '\276F';
+  position: absolute;
+  right: 14px;
+  color: #403947;
+  transition: .4s;
+  transform: rotate(0deg);
+}
+.themes-dropdown__text{
+    display: none;
+}
+
+.subscribe{
+    background-color: #ffffff;
+    box-shadow: 0px 2px 66px rgba(125, 143, 179, 0.15);
+    border-radius: 12px;
+    padding: 40px;
+    background-image: url(../assets/img/index/smiling-girl-with-laptop.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right 25px bottom;    
+    font-family: 'Gilroy', sans-serif;
+}
+.subscribe__form{
+    margin-top: 50px;
+    padding: 0 0 30px 0;
+    max-width: 65%;
+    border-bottom: 1px solid #D8D8D8;
+}
+.subscribe__input.form-control {
+    padding: 10px 16px;
+    background-color: #EFF0F2;
+}
+.subscribe__input.form-control:focus{
+    border: 1px solid #ced4da;
+    box-shadow: 0 0 0 1px  rgb(0 0 0 / 25%);
+}
+
+@media (max-width: 768px){
+    .subscribe__form{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .subscribe{
+        padding: 20px;
+        background-image: none;  
+
+    }
+}

@@ -1,0 +1,74 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+RewriteRule ^favicon.ico sites/%{https://jysaninvest.kz}/favicon.ico [NC,L]
+
+# Begin 301 Redirects
+Redirect 301 /what-we-offer/insights https://insights.jysaninvest.kz/
+Redirect 301 /c/insights-mobile/ https://insights.jysaninvest.kz/
+Redirect 301 /torgovaya-platforma https://jysaninvest.kz/platform
+Redirect 301 /torgovaya-platforma/ https://jysaninvest.kz/platform
+Redirect 301 /trading/ https://jysaninvest.kz/trading
+Redirect 301 /how-to-top-up/ https://jysaninvest.kz/how-to-top-up
+Redirect 301 /how-to-start/ https://jysaninvest.kz/how-to-start
+Redirect 301 /тарифы/ https://jysaninvest.kz/tariffs
+Redirect 301 /academy/ https://jusaninvest.kz/academy
+Redirect 301 /academy/ https://jysaninvest.kz/academy
+
+Redirect 301 /help/ https://jysaninvest.kz/help
+Redirect 301 /documents/ https://jysaninvest.kz/documents
+Redirect 301 /help-order-app/ https://jysaninvest.kz/help-order-app
+Redirect 301 /platform/ https://jysaninvest.kz/platform
+Redirect 301 /nurdaulet/ https://www.jusaninvest.kz/
+Redirect 301 /nurdaulet https://www.jusaninvest.kz/
+
+Redirect 301 /kz/nurdaulet/ https://www.jusaninvest.kz/
+Redirect 301 /kz/nurdaulet https://www.jusaninvest.kz/kz/main
+
+Redirect 301 /help/ https://jysaninvest.kz/help
+Redirect 301 /ipif/ https://jysaninvest.kz/ipif
+
+Redirect 301 /faq/ https://jysaninvest.kz/help
+Redirect 301 /faq https://jysaninvest.kz/help
+
+Redirect 301 /webinars/ https://jysaninvest.kz/webinars
+
+Redirect 301 /rekvizity-popolnenie-broker-account/ https://jysaninvest.kz/topup-details
+Redirect 301 /rekvizity-popolnenie-broker-account https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_ЦДЦБ.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_ЦДЦБ.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_USD.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_USD.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_EUR.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_EUR.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_GBP.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_GBP.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_RUB.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_RUB.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_KZT.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Sberbank_KZT.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Eurasian-bank_KZT_USD.pdf https://jysaninvest.kz/topup-details
+Redirect 301 /wp-content/uploads/2019/12/Реквизиты_клиентский-счет_Eurasian-bank_KZT_USD.pdf/ https://jysaninvest.kz/topup-details
+
+Redirect 301 /requisites/сd_ji https://www.jusaninvest.kz/requisites/cd_ji
+Redirect 301 /requisites/сd_ji/ https://www.jusaninvest.kz/requisites/cd_ji
+
+Redirect 301 /ipo/ https://www.jusaninvest.kz/ipo.html
+Redirect 301 /ipo https://www.jusaninvest.kz/ipo.html
+
+# End 301 Redirects

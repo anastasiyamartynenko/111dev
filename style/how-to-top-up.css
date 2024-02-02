@@ -1,0 +1,21 @@
+.ji-quick__nav-item{
+  width: 180px;
+}
+.ji-quick__nav-item a{
+  color: #F05323;
+}
+.ji-h6.ji-link{
+  border-bottom: 1px dashed #fe5000;
+  padding: 0 0 2px 0;
+  display: inline-block;
+}
+a.ji-h5{
+  color: #F05323;
+  border-bottom: 1px dashed #fe5000;
+  padding: 0 0 2px 0;
+}
+@media (min-width: 768px){
+  .ji-quick__nav-item{
+  padding-bottom: 40px;
+  }
+}

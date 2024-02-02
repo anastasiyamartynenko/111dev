@@ -1,0 +1,158 @@
+.bio-first {
+    padding: 48px 0 67px;
+    border-radius: 0px 0px 24px 24px;
+}
+.bio-first__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+    color: #FFFFFF;
+}
+.bio-first__text {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 38px;
+    max-width: 502px;
+}
+.bio-first .pic {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bio-first .text {
+    padding-top: 60px;
+}
+.bio-first__title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+.bio-first__biography-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 23px 0 54px;
+}
+.bio-first__edu {
+    align-items: center;
+    margin-bottom: 43px;
+    position: relative;
+}
+.bio-first__edu-info {
+    position: relative;
+}
+.bio-first__edu-info.stick-1::after {
+    content: '';
+    background: url('../assets/img/stick-1.svg') no-repeat;
+    width: 2px;
+    height: 23px;
+    position: absolute;
+    bottom: -25px;
+    left: 13px;
+}
+.bio-first__edu-info.stick-2::after {
+    content: '';
+    background: url('../assets/img/stick-2.svg') no-repeat;
+    width: 2px;
+    height: 23px;
+    position: absolute;
+    bottom: -25px;
+    left: 13px;
+}
+.bio-first__edu-date {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #727272;
+}
+.bio-first__edu-place {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.bio-first__edu-degree {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.bio-first__edu.last {
+    margin-bottom: 67px;
+}
+.bio-first.white .bio-first__title {
+    color: #21212B;
+}
+.bio-first.white .bio-first__edu-place {
+    color: #21212B;
+}
+.bio-first.white .bio-first__edu-degree {
+    color: #21212B;
+}
+@media (max-width: 991px) {
+    .bio-first .pic {
+        order: 1;
+        justify-content: center;
+    }
+    .bio-first .text {
+        order: 2;
+    }
+    .bio-first .text .apps {
+        display: none;
+    }
+    .bio-first .picture img {
+        object-fit: cover;
+        max-height: 74px;
+        margin-bottom: 10px;
+    }
+    .bio-first.white {
+        background: radial-gradient(77.8% 160.92% at 50% 50%, #FFFFFF 0%, #CDD5DA 100%);
+    }
+}
+@media (max-width: 577px) {
+    .bio-first .pic img {
+        width: 65%;
+    }
+    .bio-first__name {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .bio-first__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .bio-first__title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .bio-first__biography-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .bio-first__edu-place {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .bio-first__edu-degree {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

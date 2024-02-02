@@ -1,0 +1,501 @@
+@font-face {
+  font-family: 'JB_Sans';
+  src: url('./fonts/JB_Sans_Bold.eot');
+  src: local('JB Sans Bold'), local('JB_Sans_Bold'),
+      url('./fonts/JB_Sans_Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/JB_Sans_Bold.woff2') format('woff2'),
+      url('./fonts/JB_Sans_Bold.woff') format('woff'),
+      url('./fonts/JB_Sans_Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JB_Sans';
+  src: url('./fonts/JB_Sans_DemiBold.eot');
+  src: local('JB Sans DemiBold'), local('JB_Sans_DemiBold'),
+      url('./fonts/JB_Sans_DemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/JB_Sans_DemiBold.woff2') format('woff2'),
+      url('./fonts/JB_Sans_DemiBold.woff') format('woff'),
+      url('./fonts/JB_Sans_DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JB_Sans';
+  src: url('./fonts/JB_Sans_Medium.eot');
+  src: local('JB Sans Medium'), local('JB_Sans_Medium'),
+      url('./fonts/JB_Sans_Medium.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/JB_Sans_Medium.woff2') format('woff2'),
+      url('./fonts/JB_Sans_Medium.woff') format('woff'),
+      url('./fonts/JB_Sans_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JB_Sans';
+  src: url('./fonts/JB_Sans_Regular.eot');
+  src: local('JB Sans Regular'), local('JB_Sans_Regular'),
+      url('./fonts/JB_Sans_Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/JB_Sans_Regular.woff2') format('woff2'),
+      url('./fonts/JB_Sans_Regular.woff') format('woff'),
+      url('./fonts/JB_Sans_Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JB_Sans';
+  src: url('./fonts/JB_Sans_Light.eot');
+  src: local('JB Sans Light'), local('JB_Sans_Light'),
+      url('./fonts/JB_Sans_Light.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/JB_Sans_Light.woff2') format('woff2'),
+      url('./fonts/JB_Sans_Light.woff') format('woff'),
+      url('./fonts/JB_Sans_Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DigitalNumbers';
+  src: url('./fonts/DigitalNumbers.woff');
+  src: local('DigitalNumbers'), local('DigitalNumbers'),
+      url('./fonts/DigitalNumbers.woff') format('woff'),
+}
+
+
+.ji-hero, .ji-h1, .ji-h2, .ji-h3{
+  margin-top: 16px;
+  line-height: 50px;
+  margin-bottom: 16px;
+}
+
+.ji-h4, .ji-h5, .ji-h6{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.ji-hero-l{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 62px;
+  font-size: calc(2.2rem + 1.3vw);
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0em;
+font-weight: 700;
+}
+
+.ji-hero{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+}
+
+.ji-h1{
+   font-family: 'JB_Sans', sans-serif;
+  font-size: 48px;
+  font-size: calc(1.375rem + 1.5vw);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+   
+  
+}
+
+.ji-h2{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 30px;
+    font-size: calc(1.340rem + 1.33vw);
+    font-style: normal;
+    font-weight: 700!important;
+    line-height: 50px;
+}
+
+.ji-h3{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 30px;
+    font-size: calc(1.300rem + .5vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+}
+
+.ji-h4{
+     font-family: 'JB_Sans', sans-serif;
+    font-size: 24px;
+    font-size: calc(1.155rem + .3vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+     
+}
+.ji-h4-bold{
+     font-family: 'JB_Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+     
+}
+.ji-h4-medium{
+     font-family: 'JB_Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+     
+}
+.ji-midle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.ji-mid {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.ji-midle-22 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.ji-midle-22-light {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.bold {
+  font-weight: 700;
+}
+
+.ji-h5{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 24px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+     
+    
+}
+
+.ji-h6{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+     
+    
+}
+
+.ji-subtitle{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+
+.ji-body{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.ji-body-l{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.ji-body-m{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.ji-body-m-15{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.ji-body-m-15-b{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.ji-body-s{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ji-body-xs{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ji-body-xs-regular{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.ji-body-xxs{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ji-body-list{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.ji-btn{
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    
+}
+
+.ji-usd{
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+.ji-btn-m{
+  background-color: #FF6700;
+  border-radius: 22px;
+  padding: 8px 16px;
+  font-family: 'JB_Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  border: 0;
+}
+.ji-btn-m:focus{
+  outline: none;
+}
+.ji-btn-m:hover{
+  background-color: #FF6700;
+  color: #fff;
+}
+.btn-white-new {
+  background-color: #ffffff;
+}
+.text-orange {
+  color: #FF4810;
+}
+
+.ji-fw-9{
+  font-weight: 900;
+}
+
+.fw-5{
+  font-weight: 500;
+}
+
+.ji-blue{
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+}
+
+.ji-black{
+  color: black;
+}
+.ji-main-dark{
+  color: #201F1F;
+}
+.ji-orange{
+  color: #FF6700!important;
+}
+
+.ji-another-orange{
+  color: #FF6700;
+}
+
+.text-dark_blue{
+  color: rgba(25,48,72,1)!important;
+}
+
+.ji-dark_blue{
+  color: #193048!important;
+  opacity: .8;
+}
+
+.text-grey_body{
+  color: #757F8C;
+}
+
+.ji-cool_blue{
+  color: #5F5F79!important;
+}
+
+.ji-cool_blue-o5{
+  color: rgba(42, 42, 55, 0.5);
+}
+
+
+.ji-cool_grey{
+  color: #737C91!important;
+}
+
+.ji-gray{
+  color: #8F8F94!important;
+}
+
+.ji-green{
+  color: #50AF69;
+}
+.ji-que {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px){
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 767px){
+  .ji-body{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+     
+  }
+  .ji-body-head{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+       
+  }
+  .ji-h3-stat {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .ji-btn{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+     
+  }
+
+  .ji-subtitle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+     
+  }
+}
+
+@media (max-width: 576px){
+  .ji-hero{
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .ji-body{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+     
+  }
+
+  .ji-btn{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+     
+  }
+
+  .ji-body-head {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+  }
+  .ji-h2 {
+    line-height: 35px;
+  }
+}
+
+
+@media (max-width: 414px){
+.ji-midle-22-light {
+  font-size: 18px;
+  line-height: 22px;
+}
+}
+
+
+
+@media (max-width: 375px){
+  .ji-body{
+    font-size: 13px;
+  }
+}

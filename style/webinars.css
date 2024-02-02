@@ -1,0 +1,28 @@
+.ji-webinar-block{
+  margin: 0 0 24px;
+  padding: 36px 24px 42px;
+  color: rgb(139, 149, 158);
+  text-decoration: none;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 3%), 8px 14px 38px rgb(39 44 49 / 6%), 1px 3px 8px rgb(39 44 49 / 3%);
+  -webkit-transition: -webkit-box-shadow .3s ease-out;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.ji-webinar-block:hover{
+  transform: translateY(-10px);
+  box-shadow: 8px 14px 38px rgb(214, 214, 214);
+}
+
+.ji-webinar-block-data{
+  background-color: #169999;
+  color: #f9f9f9;
+  padding: 4px 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: lowercase;
+}

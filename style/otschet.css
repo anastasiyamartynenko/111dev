@@ -1,0 +1,374 @@
+
+.number-otschet {
+    font-family: 'DigitalNumbers';
+    font-size: 44px;
+    line-height: 57px;
+}
+.ji-h1-otch {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.regular-13 {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.text-gold-otch {
+    width: 780px;
+}
+.pos-ot-4 {
+    position: absolute;
+    right: 8%;
+    bottom: 25%;
+    z-index: 9;
+    width: 10%;
+}
+.otch-t {
+    padding: 30px 30px 30px 30px;
+    overflow: hidden;
+    border-radius: 24px;
+    height: 100%;
+}
+.otch-text {
+    width: 100%;
+}
+.ji-product-ot {
+    width: 80%;
+    float: right;
+}
+.ji-product-ot-p {
+    padding-top: 120px;
+}
+.pos-ot-1 {
+    position: absolute;
+    width: 60%;
+    right: 10%;
+    top: 55px;
+}
+.pos-ot-2 {
+    position: absolute;
+    width: 38%;
+    bottom: 30%;
+    right: 20%;
+}
+.gold-cont {
+    border-radius: 24px;
+    padding: 48px 20px 48px 40px;
+    position: relative;
+    overflow: hidden;
+}
+.pos-ot-3 {
+    position: absolute;
+    width: 65%;
+    bottom: 50%;
+    right: 0%;
+}
+.otA, .otC {
+    height: 288px;
+}
+.otch-grid {
+    display: grid;
+    grid-template-columns: 1fr 788px;
+    grid-template:             
+    "otB otA"          
+    "otB otC"
+    "otB otC";
+    gap: 36px;
+}
+.otB {
+    grid-area: otB;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    width: 376px;
+}
+.otA {
+    grid-area: otA;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+.otC {
+    grid-area: otC;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+.ji-img-otc {
+    text-align: center;
+    padding-top: 50px;
+}
+/* .text-main-draw {
+    width: 85%;
+} */
+.bg-gray {
+    background-color: #F6F6F5;
+    border-radius: 16px;
+    padding: 20px;
+}
+.w-clue {
+    width: 800px;
+    margin: auto;
+    
+}
+.mgb-48 {
+    margin-bottom: 48px;
+}
+.mg-48 {
+    margin-top: 48px;
+}
+.otc-demo-text {
+    height: 250px;
+}
+.otch {
+    padding: 20px 20px 40px 20px;
+    border-radius: 24px;
+    height: 250px;
+}
+.ji-why-img {
+    right: 20px;
+    bottom: -10%;
+    position: absolute;
+}
+.orange {
+    color: #FF6700;
+}
+
+@media (max-width: 1199px){
+    .otch {
+        height: 100%;
+    }
+}
+@media (max-width: 1180px){
+.how {
+    padding: 20px 20px 40px 20px;
+}    
+.ji-why-img {
+        width: 18%;
+    }
+    .text-gold-otch {
+        width: 608px;
+    }
+    .pos-ot-4 {
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 1090px){
+    .w-clue {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .otch {
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .otA, .otC {
+        height: 100%;
+    }
+    .w-clue {
+        width: 100%;
+    }
+    .text-gold-otch {
+        width: 500px;
+    }
+    .pos-ot-4 {
+        bottom: 2%;
+    }
+    .otch-grid {
+        display: block;
+        margin-right: 0;        
+    }
+    .otB {
+        width: 100%;
+    }   
+     .otch-t {
+        margin-bottom: 32px;
+    }
+    .otch {
+        height: 100%;
+    }
+    .ji-img-otc img {
+        width: 25%;
+    }
+    .ji-img-otc {
+        padding: 0;
+        text-align: right;
+    }
+    .ji-img-product-cont {
+        width: 100%;
+        padding-top: 50px;
+    }
+    .ji-product-ot {
+        width: 25%;
+    }
+    .pos-ot-2 {
+        width: 13%;
+        bottom: 25%;
+        right: 5%;
+    }
+    .pos-ot-3 {
+        width: 25%;
+        bottom: 45%;
+        right: -2%;
+    }
+    .demo-flex {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .d-s-none {
+        display: none;
+    }
+    .otch {
+        padding: 20px 20px 0px 20px;
+    }
+    .otc-demo-text {
+        height: 100%;
+    }
+    .text-center-mob {
+        padding-top: 48px;
+    }
+}
+
+
+@media (max-width: 943px){
+    .text-gold-otch {
+        width: 500px;
+    }
+    .pos-ot-4 {
+        bottom: 10%;
+    }
+    .ji-why-img {
+        bottom: -5%;
+    }
+    .ht-300 {
+        height: 100%;
+    }
+    .pos-ot-2 {
+        bottom: 15%;
+    }
+    .ji-img-product-cont {
+        padding-top: 35px;
+    }
+    .pos-ot-3 {
+        bottom: 35%;
+    }
+
+}
+
+    @media (max-width: 768px){
+        .ht-300 {
+            height: 470px;
+        }
+        .ji-why-img {
+            bottom: -70%;
+            width: 40%;
+            right: 0;
+        }
+        .pos-ot-4 {
+            bottom: -45%;
+            width: 20%;
+            right: 10%;
+        }
+        .gold-cont {
+            padding: 32px 20px 30px 20px;
+        }
+        .text-gold-otch {
+            width: 100%;
+        }
+
+        .ji-img-otc {
+            text-align: right;
+            padding-top: 10px;
+        }
+
+        .ji-img-product-cont {
+            width: 100%;
+        }
+        .ji-product-ot {
+            width: 30%;
+            float: right;
+        }
+        .pos-ot-2 {
+            position: absolute;
+            width: 15%;
+            bottom: 30%;
+            right: 8%;
+        }
+        .pos-ot-3 {
+            width: 25%;
+        }
+        .how {
+            padding: 20px 20px 0px 20px;
+        }
+        .otc-demo-text {
+            height: 100%;
+        }
+        .w-clue {
+            margin-top: 45px;
+        }
+        .ji-h1-otch {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 0;
+        }
+        .ji-mid {
+            margin: 0;
+        }
+        .ji-h3 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .ji-midle {
+            font-weight: 400;
+        }
+        .text-main-draw {
+            width: 100%;
+        }
+        
+    }
+
+    @media (max-width: 414px){
+    .text-center-mob {
+        padding-top: 0;
+    }   
+    .ji-why-img {
+        bottom: -55%;
+    }
+    .pos-ot-4 {
+        bottom: -40%;
+    }
+    .ji-img-otc img {
+        width: 30%;
+    }
+    .ji-img-otc {
+        padding-top: 0;
+    }
+    .pos-ot-2 {
+        bottom: 20%;
+    }
+    .ji-img-product-cont {
+        padding-top: 0;
+    }
+    .otch {
+        padding: 20px 20px 20px 20px;
+    }
+    .pad-b-30 {
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width: 390px){
+    .ji-why-img {
+        bottom: -35%;
+    }
+    .pos-ot-4 {
+        bottom: -25%;
+    }
+}

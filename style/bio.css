@@ -1,0 +1,260 @@
+p {
+    margin-bottom: 16px;
+}
+.bac-white {
+    background-color: #FFFFFF;
+}
+.bio-first {
+    padding: 48px 0 0;
+}
+.pic-fon {
+    background: url('../assets/img/nurdaulet/fon.png');
+    background-position: 0px 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bio-first__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 105px;
+    color: #FF7348;
+}
+.bio-first__text {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 38px;
+    max-width: 502px;
+}
+.pad-150 {
+    padding-top: 150px;
+}
+.bio-first__link {
+    color: #201F1F;
+    font-weight: 500;
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 28px;
+}
+.bio-first__link:hover {
+    color: #FF7348
+    ;
+}
+.blockquote {
+    position: relative;
+    margin: 16px 46px;   
+}
+.blockquote:before,
+.blockquote:after {
+    position: absolute;
+    color: #BEBEB6;
+    font-size: 100px;
+    font-family: Times, sans-serif;   
+    line-height: 100px;   
+}
+.blockquote:before {
+    content: '“';
+    left: -50px;
+    top: -50px;
+}
+.blockquote:after {
+    content: '”';
+    right: -30px;
+    bottom: -90px;
+}
+.blockquote cite {
+    color: #BEBEB6;
+    font-size: 15px;
+    padding-top: 10px;
+    display: block;
+}
+
+.bio-first .pic {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.bio-first .text {
+    padding-top: 60px;
+}
+.bio-first__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 54px;
+    margin-bottom: 48px;
+}
+.bio-first__biography {
+    margin-top: 150px;
+}
+.bio-first__biography-text {
+    font-size: 20px;
+    line-height: 26px;
+    color: #898D94;
+}
+.bio-first__edu-premiya {
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.title-bio {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #201F1F;
+}
+.bio-first__edu {
+    align-items: center;
+    margin-bottom: 43px;
+    position: relative;
+}
+.bio-first__edu:last-child {
+    margin-bottom: 0;
+} 
+.bio-first__edu-info {
+    position: relative;
+}
+
+.bio-first__edu-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #727272;
+    margin-bottom: 6px;
+}
+.bio-first__edu-place {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 6px;
+}
+.bio-first__edu-degree {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #898D94;
+
+}
+.bio-first__edu.last {
+    margin-bottom: 67px;
+}
+.bio-first.white .bio-first__title {
+    color: #21212B;
+}
+.bio-first.white .bio-first__edu-place {
+    color: #21212B;
+}
+.bio-first.white .bio-first__edu-degree {
+    color: #21212B;
+}
+.pad-100 {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+.bio-first__name {
+    font-size: 80px;
+    line-height: 85px;
+}
+}
+
+@media (max-width: 991px) {
+    .bio-first .pic {
+        order: 1;
+        justify-content: center;
+    }
+    .bio-first .text {
+        order: 2;
+    }
+    .bio-first .text .apps {
+        display: none;
+    }
+    .bio-first .picture img {
+        object-fit: cover;
+        max-height: 74px;
+        margin-bottom: 10px;
+    }
+    .bio-first.white {
+        background: radial-gradient(77.8% 160.92% at 50% 50%, #FFFFFF 0%, #CDD5DA 100%);
+    }    
+    .text .align-items-center {
+        align-items: flex-start!important;
+    }
+    .pad-150 {
+        padding-top: 100px;
+    }
+    .bio-first__biography {
+        margin-top: 100px;
+    }
+    .mob-pt-4 {
+        padding-top: 1.5rem;
+    }
+    .pad-b-mob {
+        padding-bottom: 43px;
+    }
+    .pad-b-mob:last-child {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 577px) {
+    .bio-first .pic img {
+        width: 65%;
+    }
+    .bio-first__name {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .bio-first .text {
+        padding-top: 30px;
+    }
+    .bio-first__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .bio-first__biography {
+        margin-top: 50px;
+    }
+    .pad-150 {
+        padding-top: 50px;
+    }
+    .bio-first__biography-text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .block .pic img {
+        width: 100%;
+    }
+    .bio-first__edu-place {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .bio-first__edu-degree {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .bio-first__title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 38px;
+    }
+    .bio-first__edu-premiya {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .pic-fon {
+        background-position: 20px 80px;
+    }
+    .bio-first__link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+}

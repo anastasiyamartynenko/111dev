@@ -1,0 +1,365 @@
+.video {
+    border-radius: 24px; 
+    width: 854px; 
+    height: 480px;
+}
+.bg-grad {
+    margin-top: 24px;
+}
+.kg-main {
+    border-radius: 24px;
+    background: #EBEBEB;
+    overflow: hidden;
+}
+.btn-white-new {
+    border-radius: 22px;
+    display: flex;
+    padding: 0px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138%;
+    border: 0;
+}
+.kg-h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.b-gray {
+    color:#898D94;
+}
+.text-main {
+    max-width: 45%;
+}
+.kg-main-image {
+    background-image: url(../assets/img/kegoc/kegoc-img.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: calc(100% - 50%);
+    height: 100%;
+    padding-left: 64px;
+}
+.product-dev {
+    padding: 10px;
+}
+.dev-subtitle {
+    padding: 0 40px;
+    font-size: 18px;
+    line-height: 23.4px;
+}
+.dev-grid0-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    column-gap: 24px;
+    padding-top: 20px;
+}
+.keg-grid1 {
+    width: 560px;
+    margin: auto;
+}
+.form-container {
+    width: 100%;
+}
+.calc .btn-orange-form {
+margin-top: 40px;
+}
+.main {
+    height: 560px;
+}
+.number-otschet {
+    color: #fff;
+}
+.dev-grid1 {
+    width: 560px;
+    margin: auto;
+    display: block;
+}
+.btn-wht {
+    border-radius: 24px;
+    font-size: 16px;
+    padding: 11px 24px;
+    line-height: 22px;
+}
+.text-countdown {
+    font-size: 18px;
+    line-height: 24.4px;
+    font-weight: 600;
+}
+.countdown {
+    position: fixed;
+    bottom: 30px;
+    left: 0; /* или right: 0; если вы хотите закрепить справа */
+    width: 100%; /* Ширина блока на всю ширину экрана */
+    z-index: 1001; /* Установите z-index, чтобы убедиться, что блок находится выше других элементов */
+
+}
+.count {
+    padding: 10px 40px;
+    background-image: url(../assets/img/kegoc/bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.40);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.count img {
+    margin-bottom: -18px;
+}
+.flex {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(1, 100%);
+    column-gap: 10px;
+    margin-top: 24px;
+}
+
+.modal-keg {
+    width: 500px;
+}
+.modal-body .h2 {
+    text-align: center;
+}
+.modal-new {
+    margin: 2% auto;
+}
+.countdown-mob {
+    display: none;
+}
+.footer-copyright  {
+    padding-bottom: 80px;
+}
+
+.accordion-item{
+    border-bottom: 1.5px solid rgba(190, 190, 182, 0.2);
+}
+.accordion-item span {
+    border: none;
+    margin-left: 0;
+}
+.ji-more-btn {
+    max-width: 220px;
+    width: 100%;
+    margin: 30px auto 0;
+    display: block;
+    padding: 10px 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+}
+.mob-center {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 2px 8px;
+  color: #fff;
+  opacity: 1;
+}
+.desk {
+    display: block;
+}
+.mob {
+    display: none;
+}
+.ji-dev span {
+    float: right; 
+    color: #898D94;
+}
+.calc-btn .btn-orange-form {
+    width: 100%;
+}
+.btn-mg {
+    margin-top: 64px;
+    padding: 17px 32px;
+}
+.separator {
+    opacity: .94;  
+    position: absolute;  
+    top:-2px;
+    right: -8px; 
+    color: #ffff;
+}
+
+
+@media (max-width: 1200px){
+    .dev-grid {
+        grid-template-columns: 482px 314px;
+    }
+}
+@media (max-width: 1080px) {
+    .dev-grid0-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        row-gap: 32px;
+    }
+
+}
+@media (max-width: 992px) {
+    .kg-main-image {
+        padding: 35px;
+        background-size: calc(100% - 60%);
+    }
+    .kg-main-image {
+        background-position: right center;
+    }
+    .main {
+        height: 441px;
+    }
+    .text-main {
+        max-width: 60%;
+    }
+    .dev-grid {
+        grid-template-columns: 422px 314px;
+    }
+    .confirm {
+        padding-top: 12px;
+    }
+    .indict {
+        bottom: 24px;
+    }
+    .video {
+        width: 690px; 
+        height: 390px;
+    }
+}
+
+
+@media (max-width: 788px) {
+    .video {
+        width: 576px; 
+        height: 313px;
+    }
+    .text-countdown {
+        font-size: 16px;
+        line-height: 20.48px;
+        margin-right: 5px;
+    }
+    .text-countdown img {
+        padding-bottom: 0;
+    }
+    .count .gap-32 {
+        gap:0;
+    }
+    .desk {
+        display: none;
+    }
+    .number-otschet {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .separator {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .mob {
+        display: block;
+    }
+    .countdown {
+        background-position: right;
+    }
+    .kg-main-image {
+        padding-left: 24px;
+        background-position: center top;
+        background-size: calc(100% - 50%);
+    }
+    .btn-mg {
+        margin-top: 20px;
+        padding: 17px 32px;
+    }
+    .kg-main {
+        height: 495px;
+    }
+    .kg-main-kz {
+        height: 515px;
+    }
+    .countdown-desct {
+        display: none;
+    }
+    .countdown-mob {
+        display: block;
+    }
+    .count {
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .kg-h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .indict {
+        display: none;
+    }
+    .modal-new .modal-body {
+        padding: 0 0px 10px 0px;
+    }
+    .modal-body .info-block {
+        text-align: center;
+    }
+    .dev-grid1 {
+        width: 100%;
+        margin: auto;
+    }
+    .img-dev {
+        margin-bottom: 0;
+        width: 45%;
+    }
+    .dev-subtitle {
+        padding: 0 24px;
+    }
+    .desktop {
+        display: block;
+    }
+    .dev-grid {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .ji-dev span {
+        float: none; 
+    }
+    .keg-grid1 {
+        width: 100%;
+    }
+    .indict {
+        position: relative;
+    }
+    .main .text-main {
+        max-width: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+    .main .text-pos-main {
+        position: absolute;
+    }
+    .main {
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .gap-32 {
+        gap: 14px
+    }
+    .dev-fSml, .dev-fBig {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 635px) {
+    .video {
+        width: 100%; 
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 514px) {
+    .kg-main-image {
+        background-size: calc(100% - 20%);
+    }
+}

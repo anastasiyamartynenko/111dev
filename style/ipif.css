@@ -1,0 +1,443 @@
+
+.pif-overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.pif-overflow{
+  overflow: scroll;
+}
+
+.ji-bg-3iphones{
+  background-image: url(../assets/img/3iphones.png);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.ji-block-ipif{
+  background: linear-gradient(165.5deg, #20202A 10.28%, rgba(64, 64, 87, 0.44) 156.01%);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(112, 112, 112, 0.25);
+  border-radius: 24px;
+
+  padding: 26px 36px 18px;
+}
+
+.ji-block-ipif-new{
+  position: relative;
+  background: #1B1B23;
+  border-radius: 8px;
+  padding: 20px 45px 19px;
+}
+.section-how {
+  padding: 114px 0 22px;
+}
+
+.ipif-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.ipif-text {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FFFFFF !important;
+}
+.ipif-pic-bg {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  z-index: 1;
+  height: auto;
+  bottom: 12px;
+}
+.ipif-pic-bg.zero {
+  top: 0;
+}
+.ipif-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.jicard-item {
+  height: 415px;
+  margin-bottom: 24px;
+}
+.jicard-card {
+  display: block;
+  width: 249px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: #14141E;
+  height: 100%;
+  transition: .23s all ease-in-out;
+}
+.jicard-card:hover {
+  box-shadow: 0px 24px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-12px);
+  color: #14141E;
+}
+.jicard-card:hover .jicard-card-title {
+  color: #FE5000;
+}
+.jicard-card:hover .jicard-card-title span {
+  color: #FE5000;
+}
+.jicard-card-pic {
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.jicard-card-body {
+  padding: 23px 5px 24px 12px;
+  position: relative;
+}
+.jicard-card-body_categories {
+  position: absolute;
+  top: -13px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+}
+.jicard-card-body_categories .item-orange {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F05323;
+  border-radius: 8px;
+  padding: 3px 16px 4px;
+  margin-right: 8px;
+}
+.jicard-card-body_categories .item {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 3px 8px;
+  height: 22px;
+}
+.jicard-card-body_categories .item img {
+  height: 16px;
+  display: block;
+  width: 100%;
+}
+.jicard-card-title {
+  transition: .23s all ease-in-out;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #14141E;
+}
+.jicard-card-title span {
+  transition: .23s all ease-in-out;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B1B1B1;
+}
+.jicard-card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #14141E;
+  margin-bottom: 60px;
+  height: 34px;
+}
+.jicard-card-numbers {
+  display: flex;
+}
+.jicard-card-numbers_item {
+  margin-right: 14px;
+}
+.jicard-card-numbers_item:last-child {
+  margin-right: 0;
+}
+.jicard-card-numbers_item-big {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.jicard-card-numbers_item-big.green {
+  color: #64B33F;
+}
+.jicard-card-numbers_item-big.orange {
+  color: #F05323;
+}
+.jicard-card-numbers_item-small {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  color: #21212B;
+} 
+.z-index-4 {
+  z-index: 4;
+  position: relative;
+}
+
+.jicard-card-more {
+  display: none;
+}
+.bg-ipif-blue{
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+}
+
+.ipif-pif-icon{
+  color: white;
+  width: 100px;
+  min-width: 85px;
+}
+
+.section3i{
+  position: relative;
+}
+
+.section3i::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  
+  height: 50px;
+  border-bottom-right-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+}
+
+.section3i2b{
+  position: relative;
+}
+
+.section3i2b::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  
+  height: 50px;
+  border-bottom-right-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+}
+
+.section3i2a{
+  position: relative;
+}
+
+/* rounded border prefooter block */
+/* .section3i2a::after{
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(84.1deg, #21212B 0%, #20202A 92.96%);
+  
+  height: 50px;
+  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+} */
+
+.ji-minh-380{
+  min-height: 380px;
+}
+
+.ji-minh-220{
+  height: 222px;
+}
+
+.ji-minh-280{
+  height: 280px;
+}
+
+.section150{
+  padding: 150px 0px 140px;
+}
+
+/* бут фут */
+
+.accordion-button-with-fix{
+  border-color: transparent!important;
+  padding: 5px!important;
+}
+
+.accordion-button-with-fix:focus{
+  border-color: transparent!important;
+  box-shadow: 0 0 0 0 rgba(13,110,253,0)!important;
+}
+
+.accordion-button-with-fix:not(.collapsed) {
+  color: #515154!important;
+  background-color: transparent!important;
+}
+
+.accordion-collapse-with-fix{
+  border-color: transparent!important;
+}
+
+.accordion-body-with-fix{
+  padding: 4px!important;
+}
+
+.ji-ipif-block-animation{
+  transition: all .2s linear;
+}
+
+.ji-ipif-block-animation:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 13px -7px #00000031;
+}
+
+.ji-ipif-font{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ji-ipif-font-smaller{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+
+}
+.download {
+  display: none !important;
+}
+
+@media (max-width: 768px){
+  .ji-ipif-font{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 42px;
+    font-size: calc(1.3rem + .6vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+  }
+  .ji-ipif-font-smaller{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    line-height: 1.2;
+    letter-spacing: 0em;
+  }
+  .ji-minh-220{
+    height: 322px;
+  }
+}
+
+/* style="background-image: url(../assets/img/3iphones.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right; height: 600px;" */
+
+.ipif-intro-text-pd{
+  margin: auto 0px;
+}
+
+.intro-iphone-width{
+  width: 50%;
+}
+
+.abyroi-visual-ipif-width{
+  width: 170px;
+}
+
+@media (max-width: 998px){
+  .intro-iphone-width{
+    width: 100%;
+  }
+  .ipif-intro-text-pd{
+    padding: 20px 0px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .abyroi-visual-ipif-width{
+    width: 270px;
+  }
+}
+@media (max-width: 576px) {
+  .jicard-item {
+    height: 100%;
+  }
+  .ipif-first-sec-item-1 {
+    order: 2;
+  }
+  .ipif-first-sec-item-2 {
+    order: 1;
+  }
+  .ipif-first-sec-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .ipif-first-sec-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .download {
+    display: flex !important;
+  }
+  .download a{
+    width: 150px;
+  }
+  .download a img{
+    width: 100%;
+  }
+  .section-how {
+    padding: 48px 0 22px;
+  }
+  .section-how_video {
+    height: 187px;
+  }
+  .section-ipifs {
+    padding: 0 0 51px;
+  }
+  .ipif-item {
+    height: 521px;
+    width: 100%;
+  }
+  .jicard-card {
+    width: 100%;
+  }
+  .jicard-card-more {
+    display: block;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F05323;
+    margin-top: 10px;
+  }
+}

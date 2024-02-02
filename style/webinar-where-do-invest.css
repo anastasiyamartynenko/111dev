@@ -1,0 +1,366 @@
+body {
+    background: initial;
+}
+.webinars-promo {
+    margin-bottom: 150px;
+}
+.micro-mob{
+    display: none;
+}
+.webinar-date.mob {
+    display: none;
+}
+/* .webinars-promo-dollars-bg {
+    background:  url('../assets/img/webinars/dollars-bg.png') right / contain no-repeat ;
+} */
+.webinar-promo-left {
+    margin-top: 50px;
+}.webinar-promo-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}.webinar-promo-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}.webinar-micro-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 773.08px;
+    max-height: 773.08px;
+    padding-bottom: 65px;
+}
+
+.webinar-date {
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}.webinar-date-item {
+    background: #F7F8F9;
+    box-shadow: 0px 14px 32px rgba(119, 127, 140, 0.24);
+    border-radius: 16px;
+    padding-top: 24px;
+}.webinar-date-item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FE5000;
+}.webinar-date-item-subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #193048;
+    opacity: 0.8;
+}.webinar-date-item-pic {
+    width: 100%;
+}.webinar-date-item-pic img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
+}
+
+.webinar-about-text {
+    padding-left: 0;
+}
+.webinar-subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 51px;
+    color: #20202A;
+}.webinar-tabs {
+    padding: 0;
+}.webinar-tabs-descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #20202A;
+}.webinar-programm {
+    background: #F6F6F6;
+    border-radius: 12px;
+    padding: 14px;
+}.webinar-programm-item {
+    margin-bottom: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #20202A;
+}.webinar-programm-item:last-child {
+    margin-bottom: 0;
+}.webinar-programm-item span {
+    color: #AFAFAF;
+    margin-right: 8px;
+}
+
+.webinar-register {
+    background: #20202A url('../assets/img/webinars/phones-form-bg.png') 87% / contain no-repeat ;
+    padding: 40px 0 34px;
+    position: relative;
+}.webinar-register._loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/img/webinars/spinner.svg') rgba(0, 0, 0, 0.5) center / contain no-repeat ;
+}.webinar-register-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}.webinar-register-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}.webinar-register-from {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}.webinar-register-from-input {
+    padding: 0 10px;
+    width: 50%;
+}.webinar-register-from-input input {
+    padding: 10px 15px;
+    width: 100%;
+    background: #1A1A23;
+    border: 1px solid #76768D;
+    box-sizing: border-box;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+} .webinar-register-from-btn {
+    width: 50%;
+    padding: 0 10px;
+}.webinar-register-from-btn .btn {
+    background: linear-gradient(
+        87.18deg, #F77248 -0.01%, #F2244B 100.01%);
+    border-radius: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 50px;
+    width: 100%;
+}.webinar-register-from-btn .text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.webinar-register-from ._error {
+    border: 1px solid #FE5000;
+}
+.btn-transparent {
+    padding: 10px 80px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #20202A;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1A1A23;
+}
+.webinar-after-reg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    background: linear-gradient(87.18deg, #F77248 -0.01%, #F2244B 100.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 16px;
+}
+.modal-webinars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .23s all ease-in-out;
+    visibility: hidden;
+}.modal-webinars.show {
+    opacity: 1;
+    visibility: visible;
+}.modal-popup {
+    background: #fff;
+    padding: 26px;
+    border-radius: 10px;
+}.modal-popup-pic {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 10px;
+}.modal-popup-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}.modal-popup-title {
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #20202A;
+}.modal-popup-text {
+    margin-bottom: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #20202A;
+    opacity: 0.8;
+}.modal-popup-btn {
+    border: none;
+    width: 100%;
+    max-width: 100%;
+}
+@media (max-width: 1600px) {
+    .webinar-register {
+        background: #20202A url('../assets/img/webinars/phones-form-bg.png') right / contain no-repeat ;
+    }
+}
+@media (max-width: 991px) {
+    .webinars-promo {
+        margin-bottom: 0;
+    }
+    .webinar-date.pc {
+        display: none;
+    }
+    .webinar-date.mob {
+        display: block;
+        position: relative;
+        bottom: auto;
+        left: 0;
+        transform: none;
+        padding: 30px 0;
+    }
+    .micro-pc {
+        display: none;
+    }
+    .micro-mob {
+        display: block;
+        order: 1;
+    }.webinars-promo-dollars-bg  {
+        padding: 0px 0 30px !important;
+        background: transparent;
+    }
+    .webinar-left-text {
+        order: 2;
+    }
+    .webinar-date-item-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }.webinar-date-item-pic img {
+        height: 90px;
+    }
+    .webinar-subtitle {
+        margin-bottom: 12px;
+        line-height: 29px;
+    }
+    .webinar-programm {
+        margin-bottom: 12px;
+    }
+    .webinar-register {
+        background: #20202A ;
+    }
+    .webinar-micro-pic {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 576px) {
+    .micro-mob {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .webinar-promo-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        text-align: left;
+        width: 100%;
+    }.webinar-promo-subtitle {
+        text-align: left;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }.webinar-100 {
+        width: 100%;
+    }.webinar-after-reg {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+    }
+    .webinar-date-item {
+        margin-bottom: 28px;
+    }
+    .webinar-register-from{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }.webinar-register-from-input {
+        width: 100%;
+    }.webinar-register-from-btn {
+        width: 100%;
+    }.modal-popup {
+        max-width: 322px;
+    }.ji-ipif-promo-btn {
+        padding: 10px 0;
+    }.btn-transparent {
+        padding: 10px 0;
+    }
+}

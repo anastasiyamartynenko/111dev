@@ -1,0 +1,148 @@
+.section-after-academy{
+  background-image: url(../assets/img/academyBackground.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.maxHeight3step{
+  max-height: 400px;
+}
+
+.ji-body > .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.ji-body > .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.ji-academy-card {
+  height: 181px;
+}
+
+@media (max-width: 570px) {
+  .maxHeight3step{
+    max-height: 500px;
+  }
+}
+@media (max-width: 350px) {
+  .maxHeight3step{
+    max-height: 630px;
+  }
+}
+
+.sectionAcademyCta{
+  position: relative;
+}
+
+.sectionAcademyCta::before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: -49px;
+  background: linear-gradient(
+    84.1deg
+    , #21212B 0%, #20202A 92.96%);
+  height: 50px;
+  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+}
+
+.mobile150{
+  width: 200px;
+}
+
+.ji-academy-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  color: #21212B;
+  margin-bottom: 45px;
+}
+
+.course-ver {
+  padding: 71px 0 41px;
+  background: #F6F6F6;
+}
+
+.jicard-item {
+  width: 100%;
+  max-width: 323px;
+  margin-right: 30px;
+  height: 100%;
+}
+.jicard-item:last-child {
+  margin-right: 0;
+}
+.jicard-card {
+  width: 100%;
+}
+.jicard-card:hover {
+  box-shadow: none;
+  transform: none;
+}
+.jicard-card:hover .jicard-card-title {
+  color: initial;
+}
+.jicard-card:hover .jicard-card-title span {
+  color: initial;
+}
+.jicard-card-body_categories > .item {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  height: auto;
+  border-radius: 8px;
+  padding: 3px 16px 4px;
+  font-size: 12px;
+  color: #20202A;
+  font-weight: 500;
+}
+.jicard-card-footer {
+  border-top: 1px solid #AFAFAF;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #2DA771;
+  margin: 0 -5px -24px -12px;
+  padding: 10px 0 13px;
+}
+
+@media (max-width: 570px) {
+  .mobile150{
+    width: 150px;
+  }
+  .hideMobile{
+    display: none;
+  }
+  .mobileWidthFull{
+    width: 100%;
+  }
+  .jicard-item {
+    margin-right: 0;
+  }
+  .ji-academy-title {
+    font-size: 21px;
+    margin-bottom: 0;
+    line-height: 22px;
+  }
+}
+
+
+

@@ -1,0 +1,72 @@
+.ji-arcticle-container{
+  width: 60%;
+  margin: 0px auto;
+}
+
+.ji-arcticle-padding{
+  padding: 32px 65px;
+  margin: 10px 100px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.ji-values__item{
+  padding: 15px;
+  border-radius: 16px;
+}
+#filter-criteria {
+  opacity: 0;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+.select select{  
+  width: 100%;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  padding: 8px 30px 8px 10px;
+  outline: none;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.ji-docs__content .item {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+.ji-docs__content .item .pdf-icon{
+  background-color: #fff; 
+  color: #FF4810; 
+  padding: 2px 4px; 
+  border-radius:8px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.text-right{
+  text-align: right;
+}
+
+@media (max-width: 1024px){
+  .ji-arcticle-container{
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px){
+  .ji-arcticle-container{
+    width: 100%;
+  }
+
+  .ji-arcticle-padding{
+    padding: 32px 65px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 375px){
+  .ji-arcticle-padding{
+    padding: 32px;
+    margin: 10px;
+  }
+}

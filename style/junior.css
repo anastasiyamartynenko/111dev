@@ -1,0 +1,299 @@
+img{
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-optimize-contrast;
+}
+.junior-img__rel{
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+.junior-img__rel > img{
+    position: relative;
+    z-index: 2;
+}
+.junior-img__abs-l{
+    position: absolute;
+    left: 1%;
+    bottom: 2%;
+    z-index: 3;
+    width: 36%;
+}
+.junior-img__abs-r{
+    z-index: 1;
+    position: absolute;
+    right: 10%;
+    top: 2%;
+    width: 26%;
+}
+
+.junior-block{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 22px;
+    background-repeat: no-repeat;
+    min-height: 511px;
+    position: relative;
+    overflow: hidden;
+}
+.junior-block__first{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.junior-block__second{
+    background-image: url(../assets/img/junior/third-block-bg.png);
+    background-position: top right;
+}
+.junior-block__third{
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.junior-block__third img{
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.24)
+}
+.junior-block__left{
+    padding-left: 550px;
+}
+.junior-block__right{
+    padding-left: 120px;
+}
+.junior-block__content{
+    max-width: 480px;
+}
+.junior-btn-arrow{
+    z-index: 15;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'JB_Sans', sans-serif;
+    color: #fff;
+    background-color: #FF6700;
+    border-radius: 36px;
+    padding: 12px 48px 12px 24px;
+    display: inline-block;
+}
+.junior-btn-arrow:hover{
+    color: #fff;
+}
+.junior-btn-arrow::after{
+    content: '';
+    transition: 0.3s;
+    position: absolute;
+    background-image: url(../assets/img/junior/arrow-white.svg);
+    width: 22px;
+    height: 23px;    
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    margin-left: 5px;
+}
+.junior-btn-arrow:hover::after{
+    transition: 0.3s;
+    margin-left: 14px;
+}
+.junior-info{
+    color: #212529;
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 30px 150px 0 40px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 511px;
+    transition: .3s;
+} 
+.junior-info:hover{
+    box-shadow: 0px 2px 66px rgb(125 143 179 / 18%);
+}
+.jusan-app{
+    background-image: url(../assets/img/junior/jusan-app.png);
+    background-position: bottom;
+}
+.jusan-radar{
+    background-image: url(../assets/img/junior/radar.png);
+    background-position: right bottom;
+}
+.jusan-iphone-screen{
+    background-image: url(../assets/img/junior/smartphones.png);
+    background-position: right 20px bottom;
+}
+.jusan-academy-bonnet{
+    background-color: transparent;
+    background-image: url(../assets/img/junior/bonnet.png);
+    background-position: right bottom;
+}
+.jusan-academy-line{
+    background-color: #21212B;
+    background-image: url(../assets/img/junior/line.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    border-radius: 22px;
+}
+
+.junior-btn{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #FF6700;
+    border-radius: 36px;
+    padding: 12px 36px;
+    display: inline-block;
+}
+.junior-btn:hover{
+    color: #fff;
+}
+
+.junior-parent__instruction video{
+    max-width: 700px;
+    width: 100%;
+    border-radius: 22px;
+    margin: auto;
+}
+.junior-parent{
+    background: #FFFFFF;
+    border-radius: 22px;
+    padding: 40px 100px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+.junior-parent__steps{
+    display: flex;
+    align-items: center;    
+    gap: 20px;
+}
+.junior-parent__steps-num{
+    max-width: 100px;
+    width: 100%;
+    margin: auto;
+    background: #EEEEEE;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.faq{
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 12px;
+}
+.faq__dropdown{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.faq__dropdown-arrow{
+    transition: all 0.4s ease-out;
+}
+.faq__dropdown.active .faq__dropdown-arrow {
+    transition: all 0.4s ease-out;
+    transform: rotate(180deg);
+}
+.faq__content{
+    max-width: 800px;
+    padding-top: 10px;
+    display: block;
+}
+
+@media (max-width: 992px){
+    .junior-block{
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: auto;
+    }
+    .junior-block__content{
+        padding: 10px 20px;
+    }
+    .junior-block__right{
+        padding-left: 0;
+        padding-bottom: 300px;
+    }
+    .junior-block__left{
+        padding-left: 0;        
+        padding-bottom: 0;
+       background-image: none;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .junior-block__first{
+        margin: 0 auto;
+        position: relative;
+    }
+    .junior-block__second{
+        background-position: right bottom;
+        background-size: 86%;
+    }
+    .junior-block__third{  
+        padding: 15px;
+        left: 0;
+        right: 0; 
+        margin: auto;    
+        position: relative;
+    }
+
+    .junior-info{
+        background-size: contain;
+        min-height: 380px;
+        padding: 20px;
+    }
+    .jusan-iphone-screen{
+        background-position: center bottom;
+    }    
+    .jusan-academy-bonnet{
+        background-size: 200px;
+    }
+}
+@media (max-width: 768px){
+    .junior-btn-arrow{
+        padding: 12px 24px;
+    }
+    .junior-btn-arrow::after{
+        display: none;
+    }
+
+    .junior-block__right{
+        padding-bottom: 200px;
+    }
+    .junior-info{
+        min-height: 440px;
+    }
+    .jusan-academy-bonnet{
+        min-height: 400px;
+        background-size: 280px;
+    }
+    .junior-parent{
+        padding: 20px;
+        gap: 20px;
+    }
+    .junior-parent__steps-num{
+        max-width: 50px;
+        border-radius: 16px;
+    }
+}
+@media (max-width: 400px){
+    .junior-info{
+        min-height: 380px;
+    }
+    .jusan-academy-bonnet{
+        background-size: 240px;
+    }
+}
