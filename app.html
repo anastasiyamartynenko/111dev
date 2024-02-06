@@ -25,24 +25,10 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
 
     <link rel="stylesheet" href="./style/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
-  <div id="modal-demo" uk-modal>
-    <div class="modal-content modal-qr modal-new uk-modal-dialog uk-modal-body"> 
-        <div class="modal-header">   
-            <button type="button" class="uk-modal-close btn-close close"></button>
-         </div>  
-        <div class="modal-body">
-            <img src="assets/img/demo/qr-demo.svg" alt="qr">
-            <div class="info-block">
-            <p class="info-block-title">Наведите камеру на QR-код</p><p class="info-block-text">чтобы скачать мобильное приложение Jusan</p>
-            </div>
-        </div> 
-    </div>
-</div>
 
   
 <div id="header"></div>
@@ -59,7 +45,7 @@
             </div> 
             <div class="">
                 <div class="text-center mt-4 img-app-slide">
-                    <img src="assets/img/app/main_screen.webp" alt="">
+                    <img src="upload/img/app/main_screen.webp" alt="">
                 </div>
             </div> 
         </div>
@@ -76,7 +62,7 @@
             <div class="app-container gap">
                 <div class="app-container-items">
                     <div class="appcol1 app-container-icons">
-                        <img src="assets/img/app/3d_icons.webp" alt="rating">
+                        <img src="upload/img/app/3d_icons.webp" alt="rating">
                     </div>
                     <div class="appcol2">
                     <div class="ji-18 mt-12 bold">Лента событий по всем счетам: списания, комиссии, начисления</div>
@@ -84,7 +70,7 @@
                 </div>
                 <div class="app-container-items">
                     <div class="appcol1 app-container-icons">
-                        <img src="assets/img/app/3d_icons-1.webp" alt="rating">
+                        <img src="upload/img/app/3d_icons-1.webp" alt="rating">
                     </div>
                     <div class="appcol2">
                     <div class="ji-18 mt-12 bold">Финансово-аналитические отчеты прямо в приложении</div>
@@ -93,7 +79,7 @@
 
                 <div class="app-container-items">
                     <div class="appcol1 app-container-icons">
-                        <img src="assets/img/app/3d_icons-2.webp" alt="rating">
+                        <img src="upload/img/app/3d_icons-2.webp" alt="rating">
                     </div>
                     <div class="appcol2">
                         <div class="ji-18 mt-12 bold">Расчет финансового результата за день по каждому инструменту</div>
@@ -102,7 +88,7 @@
 
                 <div class="app-container-items">
                     <div class="appcol1 app-container-icons">
-                        <img src="assets/img/app/3d_icons-3.webp" alt="rating">
+                        <img src="upload/img/app/3d_icons-3.webp" alt="rating">
                     </div>
                     <div class="appcol2">
                         <div class="ji-18 mt-12 bold">Инвестиции в биржевые паевые инвестиционные фонды</div>
@@ -123,22 +109,29 @@
                         <div class="ji-gray mt-16">
                             <p>В приложении доступны любые инвестиционные продукты на казахстанском рынке</p>
                         </div>
-                        <div class="ji-18 max-item-bg">
-                            <p>В приложении доступны любые инвестиционные продукты на казахстанском рынке</p>
-                        </div>
-                        <div class="btn-desctop ji-18 max-item">
-                            <p>Доступ к более чем 10 000 инструментам по всему миру</p>
-                        </div>
-                        <div class="btn-desctop ji-18 max-item">
-                            <p>Понятный стакан инструмента и информация по&nbsp;ценным бумагам</p>
-                        </div>
-                        <div class="btn-desctop ji-18 max-item">
-                            <p>Добавляйте понравившиеся бумаги в Избранное чтобы отслеживать изменяющиеся по ним условия и события</p>
-                        </div>                        
+                        <div class="fl-mobPrdo">
+                            <div class="scroll-container">
+                                <div class="block-sl block-sl-1 ji-18 max-item">
+                                    <p>В приложении доступны любые инвестиционные продукты на казахстанском рынке</p>
+                                </div>
+                                <div class="block-sl block-sl-2 ji-18 max-item">
+                                    <p>Доступ к более чем 10 000 инструментам по всему миру</p>
+                                </div>
+                                <div class="block-sl block-sl-3 ji-18 max-item">
+                                    <p>Понятный стакан инструмента и информация по&nbsp;ценным бумагам</p>
+                                </div>
+                                <div class="block-sl block-sl-4 ji-18 max-item">
+                                    <p>Добавляйте понравившиеся бумаги в Избранное чтобы отслеживать изменяющиеся по ним условия и события</p>
+                                </div>
+                            </div>
+                        </div>                      
                     </div>          
                 </div>
-                <div class="">
-                    <div class="app-max-img"><img src="assets/img/app/img-4.webp" alt=""></div>                   
+                <div class="slideshow-container">
+                    <div class="block-sl-1-img app-max-img"><div class="img-1-app-possib"></div></div> 
+                    <div class="block-sl-2-img app-max-img"><div class="img-2-app-possib"></div></div>
+                    <div class="block-sl-3-img app-max-img"><div class="img-3-app-possib"></div></div>
+                    <div class="block-sl-4-img app-max-img"><div class="img-4-app-possib"></div></div>                  
                 </div>                    
             </div>
             <div class="text-center">
@@ -154,12 +147,12 @@
         <div class="app-section">
             <div class="app-max-cont gap">
                 <div class="app-m1">
-                    <div class="app-max-img"><img src="assets/img/app/img.webp" alt=""></div>                   
+                    <div class="img-app-max"><img src="upload/img/app/img.webp" alt=""></div>                   
                 </div>
                 <div class="app-m2 app-max">
                     <div class="">
                         <h2 class="ji-h2-big bold">Мы ценим ваше время</h2>                    
-                        <div class="ji-gray mt-16">
+                        <div class="ji-gray mt-16 ji-18-16">
                             <p>Нет времени на анализ эмитентов и инвестиционных бумаг?</p>
                             <p class="mt-12">В разделе Инвестидеи вы сможете подобрать готовые инвестиционные решения под ваши цели, с учетом выбранных вами суммы и сроков инвестирования</p>
                         </div>                                               
@@ -178,13 +171,13 @@
                 <div class="app-max">
                     <div class="">
                         <h2 class="ji-h2-big bold">Наглядная аналитика инвестпортфеля</h2>                    
-                        <div class="ji-gray mt-16">
+                        <div class="ji-gray mt-16 ji-18-16">
                             <p>Смотрите на диаграммах, как ваши средства распределены между финансовыми инструментами и получайте расширенную информацию по инструменту</p>
                         </div>                                               
                     </div>          
                 </div>
                 <div class="">
-                    <div class="app-max-img"><img src="assets/img/app/img-1.webp" alt=""></div>                   
+                    <div class="img-app-max"><img src="upload/img/app/img-1.webp" alt=""></div>                   
                 </div>                
             </div>            
         </div>
@@ -203,44 +196,52 @@
                     </div>
                 </div>
                 <div class="app-container-icons">
-                    <img src="assets/img/app/3d_icons _Sources.webp" alt="rating">
+                    <img src="upload/img/app/3d_icons _Sources.webp" alt="rating">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="uk-container">
-        <div class="app-section">
-            <div class="app-max-cont gap">
-                <div class="app-max">
-                    <div class="">
-                        <h2 class="ji-h2-big bold">Первое правило инвестиций: просто начните инвестировать</h2>                    
-                        <div class="ji-gray mt-16">
-                            <p>Вам не потребуются специальные знания или крупный стартовый капитал. А если вы не новичок, воспользуйтесь решениями для квалифицированных инвесторов</p>
-                        </div>
-                        <div class="ji-18 max-item-bg">
-                            <p class="bold">Будьте в курсе</p>
-                            <p>Вся информация об изменениях рынка отображается в реальном времени</p>
-                        </div>
-                        <div class="btn-desctop ji-18 max-item">
-                            <p class="bold">Консенсус-прогнозы</p>
-                            <p>Совокупные прогнозы потенциальной стоимости ценных бумаг</p>
-                        </div>
-                        <div class="btn-desctop ji-18 max-item">
-                            <p class="bold">Стакан</p>
-                            <p>Удобный инструмент для оценки объемов и настроений торгов</p>
-                        </div>                                              
-                    </div>          
-                </div>
+<div class="uk-container">
+    <div class="app-section">
+        <div class="app-max-cont gap">
+            <div class="app-max">
                 <div class="">
-                    <div class="app-max-img"><img src="assets/img/app/img-1-2.webp" alt=""></div>                   
-                </div>                    
-            </div>            
+                    <h2 class="ji-h2-big bold">Первое правило инвестиций: просто начните инвестировать</h2>                    
+                    <div class="ji-gray mt-16">
+                        <p>Вам не потребуются специальные знания или крупный стартовый капитал. А если вы не новичок, воспользуйтесь решениями для квалифицированных инвесторов</p>
+                    </div>
+                    <div class="fl-mobPrdo">
+                        <div class="scroll-container">
+                            <div class="block-sl block-sl-5 ji-18 max-item">
+                                <p class="bold">Будьте в курсе</p>
+                                <p>Вся информация об изменениях рынка отображается в реальном времени</p>
+                            </div>
+                            <div class="block-sl block-sl-6 ji-18 max-item">
+                                <p class="bold">Консенсус-прогнозы</p>
+                                <p>Совокупные прогнозы потенциальной стоимости ценных бумаг</p>
+                            </div>
+                            <div class="block-sl block-sl-7 ji-18 max-item">
+                                <p class="bold">Стакан</p>
+                                <p>Удобный инструмент для оценки объемов и настроений торгов</p>
+                            </div>
+                        </div>
+                    </div>                       
+                </div>          
+            </div>
+            <div class="slideshow-container">
+                <div class="block-sl-5-img app-max-img"><div class="img-5-app-possib"></div></div> 
+                <div class="block-sl-6-img app-max-img"><div class="img-6-app-possib"></div></div>
+                <div class="block-sl-7-img app-max-img"><div class="img-7-app-possib"></div></div>
+            </div>                    
+        </div>
+        <div class="text-center">
+            <button style="margin-top: 48px;" class="btn-desctop ji-orange-btn" type="button" uk-toggle="target: #modal-demo">Скачать приложение</button>
+            <a href="https://jusan.me/FCkd/picn99g9" target="_blank" style="margin-top: 32px;" class="btn-mob ji-orange-btn" type="button">Скачать приложение</a>  
         </div>
     </div>
-</section>
+</div>
 
 <section>
     <div class="uk-container">
@@ -287,8 +288,8 @@
                             <div class="ji-26 ji-gray" id="savingsAccount">120 000 ₸</div>
                         </div>
                         <div class="ji-body-xs ji-gray mt-12">
-                            <img src="assets/img/app/Frame_2087325895.png" alt="">
-                            <canvas id="growthChart" style="width: 100%; height:100%" ></canvas>
+                            <img src="upload/img/app/Frame_2087325895.png" alt="">
+                            <canvas id="growthChart" style="width: 100%; height: 100%;"></canvas>
                         </div>
                         <div class="uk-flex uk-flex-between ji-18 mt-16">
                             <div>Сегодня</div>
@@ -329,7 +330,85 @@
 
 
  <div id="footer" class="footer"></div>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the canvas element
+        var ctx = document.getElementById('growthChart').getContext('2d');
+
+        // Initial data
+        var initialMoney = parseInt(document.getElementById('initialMoneyInput').value);
+        var replenishmentMoney = parseInt(document.getElementById('replenishmentMoneyInput').value);
+        var years = [5, 10, 20, 30];
+
+        // Function to calculate the growth
+        function calculateGrowth(years) {
+            var interestIncomeData = [];
+            var savingsAccountData = [];
+
+            for (var i = 0; i < years.length; i++) {
+                var currentYear = years[i];
+                var totalInterestIncome = calculateInterestIncome(initialMoney, replenishmentMoney, currentYear);
+                var totalSavingsAccount = calculateSavingsAccount(initialMoney, replenishmentMoney, currentYear);
+
+                interestIncomeData.push(totalInterestIncome);
+                savingsAccountData.push(totalSavingsAccount);
+            }
+
+            return { interestIncome: interestIncomeData, savingsAccount: savingsAccountData };
+        }
+
+        // Function to calculate interest income
+        function calculateInterestIncome(initialMoney, replenishmentMoney, years) {
+            // Implement your interest income calculation logic here
+            // For simplicity, assuming a fixed interest rate
+            var annualInterestRate = 0.05;
+            var totalInterestIncome = initialMoney * Math.pow((1 + annualInterestRate), years);
+
+            return totalInterestIncome.toFixed(2);
+        }
+
+        // Function to calculate savings account
+        function calculateSavingsAccount(initialMoney, replenishmentMoney, years) {
+            // Implement your savings account calculation logic here
+            // For simplicity, assuming a fixed monthly contribution
+            var totalSavingsAccount = initialMoney + (replenishmentMoney * 12 * years);
+
+            return totalSavingsAccount.toFixed(2);
+        }
+
+        // Create the chart
+        var chartData = calculateGrowth(years);
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: years.map(function (year) { return year + ' years'; }),
+                datasets: [{
+                    label: 'Interest Income',
+                    data: chartData.interestIncome,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }, {
+                    label: 'Savings Account',
+                    data: chartData.savingsAccount,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
   <!-- UIkit JS -->
+
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
   

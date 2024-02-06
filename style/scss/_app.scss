@@ -28,19 +28,44 @@
     margin-bottom: 36px!important;
     padding: 12px 40px 12px 64px;
 }
+.slideshow-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.app-max-img {
+    display: none;
+}
+
+.app-max-img.active {
+    display: block;
+    width: 100%;
+}
 .app-every {
     margin-top: 36px;
 }
 .app-every p {
     width: 640px;
 }
-.max-item-bg {
+.app-max-img.active {
+    display: block;
+}
+
+.block-sl.active {
     background-color: #fff;
     padding: 24px;
     margin: 24px 0;
     border-radius: 16px;
     width: 400px;
+    
 }
+// .max-item-bg {
+//     background-color: #fff;
+//     padding: 24px;
+//     margin: 24px 0;
+//     border-radius: 16px;
+//     width: 400px;
+// }
 .max-item {
     padding: 24px;
     width: 400px;    
@@ -65,9 +90,7 @@
     grid-template-columns: 1fr 160px;
     gap: 30px;
 }
-.contr-haps .app-container-icons img{
-    width: 100%;
-}
+
 .contr-haps-text {
     width: 640px;
 }
@@ -150,6 +173,61 @@ margin: 0;
 canvas {
     border: 1px solid #000;
 }
+.mob-img-app-bl  {
+    display: none;
+}
+.img-1-app-possib {
+    background-image: url(../upload/img/app/img-1-1.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+.img-2-app-possib {
+    background-image: url(../upload/img/app/img-2-1.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+
+.img-3-app-possib {
+    background-image: url(../upload/img/app/img-3-1.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+
+.img-4-app-possib {
+    background-image: url(../upload/img/app/img-4.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+.img-5-app-possib {
+    background-image: url(../upload/img/app/img-1-2.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+.img-6-app-possib {
+    background-image: url(../upload/img/app/img-2.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+.img-7-app-possib {
+    background-image: url(../upload/img/app/img-3.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 584px;
+}
+
 
 
 @media (max-width: 1045px){
@@ -160,16 +238,9 @@ canvas {
 }
 
 @media (max-width: 992px) {
-    .app-max-cont {
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-    }
+
     .max-item-bg {
         width: 100%;
-    }
-    .app-max-img {
-        width: 50%;
-        margin: auto;
     }
     .app-m1 {
         grid-column: 1;
@@ -185,6 +256,67 @@ canvas {
 }
 
 @media (max-width: 880px){ 
+
+    .fl-mobPrdo {
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    
+    .scroll-container {
+        display: flex; /* Use flexbox for the container */
+        width: 360px; /* Set the width to 1000px */
+        gap: 8px;
+    }
+
+    /* Adjust the styles for individual blocks if needed */
+    .block-sl {
+        flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+        padding: 10px; /* Add padding if desired */        
+        background-color: #fff;
+        margin: 24px 0;
+        border-radius: 16px;
+        padding: 24px;
+        cursor: pointer;
+    }    
+    .block-sl.active {
+        display: block;
+        width: 100%;
+        background-color: #f1f1f1ad;    
+    }
+    .app-max-cont {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .img-1-app-possib {
+        background-image: url(../upload/img/app/img1-1.webp);
+        height: 600px;
+    }
+    .img-2-app-possib {
+        background-image: url(../upload/img/app/img2-1.webp);
+        height: 600px;
+    }
+    
+    .img-3-app-possib {
+        background-image: url(../upload/img/app/img3-1.webp);
+        height: 600px;
+    }
+    
+    .img-4-app-possib {
+        background-image: url(../upload/img/app/img4.webp);
+        height: 600px;
+    }
+    .img-5-app-possib {
+        background-image: url(../upload/img/app/img3-1.webp);
+        height: 600px;
+    }
+    .img-6-app-possib {
+        background-image: url(../upload/img/app/img2.webp);
+        height: 600px;
+    }
+    .img-7-app-possib {
+        background-image: url(../upload/img/app/img3.webp);
+        height: 600px;
+    }
+    
     .main-app {
         flex-wrap: wrap;
         text-align: center;
@@ -194,7 +326,7 @@ canvas {
         padding-top: 48px;
     }
     .img-app-slide img {
-        width: 50%;
+        width: 100%;
     }
     .app-container {
         grid-template-columns: 1fr;
@@ -224,8 +356,26 @@ canvas {
 
 
 @media (max-width: 768px){ 
-    .main-app{
-        padding: 0 12px;
+    .mob-img-app-non {
+        display: none;
+    }
+    .mob-img-app-bl  {
+        display: block;
+    }
+    .max-item {
+        width: 100%;
+    } 
+    .block-sl {
+        width: 100%;
+    }
+    .contr-haps-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .main-app {
+        padding: 0px 12px;
     }
     .app-container-items {
         display: grid;
@@ -235,7 +385,6 @@ canvas {
         justify-content: space-between;
     }
     .app-container-icons img {
-        width: 55%;
         float: right;
     }
     .app-container-items {
