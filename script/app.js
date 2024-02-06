@@ -132,35 +132,24 @@ document.addEventListener('DOMContentLoaded', function () {
         blocks.forEach((block, i) => {
             if (i === index) {
                 block.classList.add('active');
+                if (window.innerWidth <= 768) { // Проверяем, что это мобильная версия
+                    block.parentNode.prepend(block); // Перемещаем активный блок в начало контейнера
+                }
             } else {
                 block.classList.remove('active');
             }
         });
     }
     function scrollToActiveBlock() {
-        const appMaxCont = document.querySelector('.app-max-cont');
-        if (isElementInViewport(appMaxCont)) {
-            const activeBlock = document.querySelector('.block-sl.active');
-            if (activeBlock && !isElementInViewport(activeBlock)) {
-                console.log("Активный блок:", activeBlock);
-                activeBlock.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                });
-            }
+        const activeBlock = document.querySelector('.block-sl.active');
+        if (activeBlock) {
+            activeBlock.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
         }
     }
     
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
     function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
