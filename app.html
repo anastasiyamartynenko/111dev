@@ -24,6 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.11/dist/js/uikit-icons.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./style/main.css">
 
 </head>
@@ -111,7 +113,7 @@
                         </div>
                         <div class="fl-mobPrdo">
                             <div class="scroll-container">
-                                <div class="block-sl block-sl-1 ji-18 max-item">
+                                <div class="block-sl block-sl-1 ji-18 max-item active">
                                     <p>В приложении доступны любые инвестиционные продукты на казахстанском рынке</p>
                                 </div>
                                 <div class="block-sl block-sl-2 ji-18 max-item">
@@ -214,17 +216,17 @@
                     </div>
                     <div class="fl-mobPrdo">
                         <div class="scroll-container">
-                            <div class="block-sl block-sl-5 ji-18 max-item">
-                                <p class="bold">Будьте в курсе</p>
-                                <p>Вся информация об изменениях рынка отображается в реальном времени</p>
+                            <div class="block-sl2 block-sl-5 ji-18 max-item">
+                                <p class="bold app-mr-bot ji-18">Будьте в курсе</p>
+                                <p class="ji-18-16">Вся информация об изменениях рынка отображается в реальном времени</p>
                             </div>
-                            <div class="block-sl block-sl-6 ji-18 max-item">
-                                <p class="bold">Консенсус-прогнозы</p>
-                                <p>Совокупные прогнозы потенциальной стоимости ценных бумаг</p>
+                            <div class="block-sl2 block-sl-6 ji-18 max-item">
+                                <p class="bold app-mr-bot ji-18">Консенсус-прогнозы</p>
+                                <p class="ji-18-16">Совокупные прогнозы потенциальной стоимости ценных бумаг</p>
                             </div>
-                            <div class="block-sl block-sl-7 ji-18 max-item">
-                                <p class="bold">Стакан</p>
-                                <p>Удобный инструмент для оценки объемов и настроений торгов</p>
+                            <div class="block-sl2 block-sl-7 ji-18 max-item">
+                                <p class="bold app-mr-bot ji-18">Стакан</p>
+                                <p class="ji-18-16">Удобный инструмент для оценки объемов и настроений торгов</p>
                             </div>
                         </div>
                     </div>                       
@@ -236,10 +238,7 @@
                 <div class="block-sl-7-img app-max-img"><div class="img-7-app-possib"></div></div>
             </div>                    
         </div>
-        <div class="text-center">
-            <button style="margin-top: 48px;" class="btn-desctop ji-orange-btn" type="button" uk-toggle="target: #modal-demo">Скачать приложение</button>
-            <a href="https://jusan.me/FCkd/picn99g9" target="_blank" style="margin-top: 32px;" class="btn-mob ji-orange-btn" type="button">Скачать приложение</a>  
-        </div>
+       
     </div>
 </div>
 
@@ -248,7 +247,7 @@
         <div class="bg-white contr-gr">
             <div class="">                
                 <div class="contr-gr-text">
-                    <h3 class="ji-h2-32 text-center">Небольшие инвестиции могут помочь вашим деньгам расти</h3>                    
+                    <h3 class="ji-h2-32 text-center bold">Небольшие инвестиции могут помочь вашим деньгам расти</h3>                    
                 </div>
                 <div class="grafic uk-flex uk-flex-between">
                     <div>
@@ -281,7 +280,7 @@
                     <div>
                         <div>
                             <div class="ji-body-xs bold">Процентный доход</div>
-                            <div class="ji-h1 orange" id="interestIncome">300 000 ₸</div>
+                            <div class="ji-h1-cal-app orange" id="interestIncome">300 000 ₸</div>
                         </div>
                         <div class="padT-16-24">
                             <div class="ji-body-xs bold">Сберегательный счет</div>
@@ -302,8 +301,8 @@
             </div>
         </div>
         <div class="text-center" style="padding-top: 24px;">
-            <button style="margin-top: 48px;" class="btn-desctop ji-orange-btn" type="button" uk-toggle="target: #modal-demo">Скачать приложение</button>
-            <a href="https://jusan.me/FCkd/picn99g9" target="_blank" style="margin-top: 32px;" class="btn-mob ji-orange-btn" type="button">Скачать приложение</a>  
+            <button style="margin-top: 48px;" class="btn-desctop ji-orange-btn" type="button" uk-toggle="target: #modal-demo">Начать инвестировать</button>
+            <a href="https://jusan.me/FCkd/picn99g9" target="_blank" class="btn-mob ji-orange-btn" type="button">Начать инвестировать</a>  
         </div>
     </div>
 
@@ -330,7 +329,7 @@
 
 
  <div id="footer" class="footer"></div>
-
+ 
  <script>
     document.addEventListener("DOMContentLoaded", function () {
         // Get the canvas element
@@ -425,5 +424,7 @@
 <!-- JavaScript to initialize Swiper only on mobile -->
 
 </body>
+
+
 
 </html>

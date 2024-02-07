@@ -44,137 +44,56 @@ function drawLine(dataPoints, color, lineWidth) {
 
 
 //* Слайд "Максимум возможностей" *//
-document.addEventListener('DOMContentLoaded', function () {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.block-sl-1-img, .block-sl-2-img, .block-sl-3-img, .block-sl-4-img');
-    const blocks = document.querySelectorAll('.block-sl-1, .block-sl-2, .block-sl-3, .block-sl-4');
+$(document).ready(function(){
+    // Показать и сделать активным block-sl-1-img при загрузке страницы
+    $(".block-sl-1-img").show();
+    $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide(); // Скрыть остальные изображения
+    $(".block-sl-1").addClass("active");
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            if (i === index) {
-                slide.classList.add('active');
-            } else {
-                slide.classList.remove('active');
-            }
-        });
-    }
+    // Обработчики событий hover для блоков
+    $(".block-sl").hover(function(){
+        $(".block-sl").removeClass("active"); // Удалить класс active у всех блоков
+        $(this).addClass("active"); // Добавить класс active блоку, на который навели курсор
+    });
 
-    function showBlock(index) {
-        blocks.forEach((block, i) => {
-            if (i === index) {
-                block.classList.add('active');
-            } else {
-                block.classList.remove('active');
-            }
-        });
-    }
-
-    function scrollToActiveBlock() {
-        const activeBlock = document.querySelector('.block-sl.active');
-        if (activeBlock) {
-            activeBlock.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        }
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-        showBlock(currentIndex);
-        scrollToActiveBlock();
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-        showBlock(currentIndex);
-        scrollToActiveBlock();
-    }
-
-    // Изменение слайда каждые 5 секунд
-    setInterval(nextSlide, 2000);
-
-    // При загрузке страницы активируем первый слайд и блок
-    showSlide(currentIndex);
-    showBlock(currentIndex);
-    scrollToActiveBlock();
-
-    blocks.forEach((block, index) => {
-        block.addEventListener('click', function () {
-            currentIndex = index;
-            showSlide(currentIndex);
-            showBlock(currentIndex);
-            scrollToActiveBlock();
-        });
+    $(".block-sl-2").hover(function(){
+        $(".block-sl-2-img").show();
+        $(".block-sl-1-img, .block-sl-3-img, .block-sl-4-img").hide();
+    });
+    $(".block-sl-3").hover(function(){
+        $(".block-sl-3-img").show();
+        $(".block-sl-1-img, .block-sl-2-img, .block-sl-4-img").hide();
+    });
+    $(".block-sl-4").hover(function(){
+        $(".block-sl-4-img").show();
+        $(".block-sl-1-img, .block-sl-2-img, .block-sl-3-img").hide();
+    });
+    $(".block-sl-1").hover(function(){
+        $(".block-sl-1-img").show();
+        $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide();
     });
 });
 
 
+//* Слайд "Первое правило инвестиций *//
+$(document).ready(function(){
+    // Показать и сделать активным block-sl-1-img при загрузке страницы
+    $(".block-sl-5-img").show();
+    $(".block-sl-6-img, .block-sl-7-img").hide(); // Скрыть остальные изображения
+    $(".block-sl-5").addClass("active");
 
-document.addEventListener('DOMContentLoaded', function () {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.block-sl-5-img, .block-sl-6-img, .block-sl-7-img');
-    const blocks = document.querySelectorAll('.block-sl-5, .block-sl-6, .block-sl-7');
-
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            if (i === index) {
-                slide.classList.add('active');
-            } else {
-                slide.classList.remove('active');
-            }
-        });
-    }
-
-    function showBlock(index) {
-        blocks.forEach((block, i) => {
-            if (i === index) {
-                block.classList.add('active');
-                if (window.innerWidth <= 768) { // Проверяем, что это мобильная версия
-                    block.parentNode.prepend(block); // Перемещаем активный блок в начало контейнера
-                }
-            } else {
-                block.classList.remove('active');
-            }
-        });
-    }
-    function scrollToActiveBlock() {
-        const activeBlock = document.querySelector('.block-sl.active');
-        if (activeBlock) {
-            activeBlock.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        }
-    }
-    
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-        showBlock(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-        showBlock(currentIndex);
-    }
-
-    // Изменение слайда каждые 5 секунд
-    setInterval(nextSlide, 2000);
-
-    // При загрузке страницы активируем первый слайд и блок
-    showSlide(currentIndex);
-    showBlock(currentIndex);
-
-    blocks.forEach((block, index) => {
-        block.addEventListener('click', function () {
-            currentIndex = index;
-            showSlide(currentIndex);
-            showBlock(currentIndex);
-        });
+    // Обработчики событий hover для блоков
+    $(".block-sl2").hover(function(){
+        $(".block-sl2").removeClass("active"); // Удалить класс active у всех блоков
+        $(this).addClass("active"); // Добавить класс active блоку, на который навели курсор
     });
-});
 
+    $(".block-sl-6").hover(function(){
+        $(".block-sl-6-img").show();
+        $(".block-sl-5-img, .block-sl-7-img").hide();
+    });
+    $(".block-sl-7").hover(function(){
+        $(".block-sl-7-img").show();
+        $(".block-sl-5-img, .block-sl-6-img").hide();
+    });   
+});

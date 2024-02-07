@@ -21,7 +21,7 @@
     transition: 0.3s;
 }
 .app-container-icons img {
-    width: 31%;
+    width: 100%;
 }
 .main-app {
     margin-top: 24px;
@@ -33,31 +33,11 @@
     overflow: hidden;
 }
 
-.app-max-img {
-    display: none;
-}
-
-.app-max-img.active {
-    display: block;
-    width: 100%;
-}
 .app-every {
     margin-top: 36px;
 }
 .app-every p {
     width: 640px;
-}
-.app-max-img.active {
-    display: block;
-}
-
-.block-sl.active {
-    background-color: #fff;
-    padding: 24px;
-    margin: 24px 0;
-    border-radius: 16px;
-    width: 400px;
-    
 }
 // .max-item-bg {
 //     background-color: #fff;
@@ -105,6 +85,10 @@
 }
 .pdT-24 {
     padding-top: 24px;
+}
+.ji-h1-cal-app {
+    font-size: 40px;
+    line-height: 48px;
 }
 .contr-gr .range-cont {
     padding-top: 20px;
@@ -173,15 +157,15 @@ margin: 0;
 canvas {
     border: 1px solid #000;
 }
-.mob-img-app-bl  {
-    display: none;
-}
+
+
 .img-1-app-possib {
     background-image: url(../upload/img/app/img-1-1.webp);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
 .img-2-app-possib {
     background-image: url(../upload/img/app/img-2-1.webp);
@@ -189,6 +173,7 @@ canvas {
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
 
 .img-3-app-possib {
@@ -197,6 +182,7 @@ canvas {
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
 
 .img-4-app-possib {
@@ -205,6 +191,7 @@ canvas {
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
 .img-5-app-possib {
     background-image: url(../upload/img/app/img-1-2.webp);
@@ -212,6 +199,7 @@ canvas {
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
 .img-6-app-possib {
     background-image: url(../upload/img/app/img-2.webp);
@@ -219,6 +207,7 @@ canvas {
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
 .img-7-app-possib {
     background-image: url(../upload/img/app/img-3.webp);
@@ -226,9 +215,26 @@ canvas {
     background-size: contain;
     background-repeat: no-repeat;
     height: 584px;
+    width: 100%;
 }
-
-
+.app-max-img {
+    width: 100%;
+}
+.block-sl, .block-sl2 {
+    padding: 24px;
+    margin: 24px 0;
+}
+.block-sl.active, .block-sl2.active {
+    background-color: #ffff; 
+    border-radius: 24px;
+}
+.block-sl:hover, .block-sl:hover {
+    background-color: #ffff; 
+    border-radius: 24px;
+}
+.app-mr-bot {
+    margin-bottom: 8px;
+}
 
 @media (max-width: 1045px){
     .main-text-app .ji-h1-big {
@@ -259,64 +265,31 @@ canvas {
 
     .fl-mobPrdo {
         overflow-x: auto; /* Enable horizontal scrolling */
+        margin-right: -24px; /* Компенсируем отступ справа */
     }
     
     .scroll-container {
-        display: flex; /* Use flexbox for the container */
-        width: 360px; /* Set the width to 1000px */
+        display: flex;
+        width: 360px;
         gap: 8px;
     }
 
-    /* Adjust the styles for individual blocks if needed */
-    .block-sl {
-        flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
-        padding: 10px; /* Add padding if desired */        
-        background-color: #fff;
-        margin: 24px 0;
-        border-radius: 16px;
-        padding: 24px;
-        cursor: pointer;
-    }    
-    .block-sl.active {
-        display: block;
-        width: 100%;
-        background-color: #f1f1f1ad;    
-    }
     .app-max-cont {
         grid-template-columns: 1fr;
         row-gap: 10px;
     }
-    .img-1-app-possib {
-        background-image: url(../upload/img/app/img1-1.webp);
-        height: 600px;
+    .block-sl, .block-sl2 {
+        flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+        padding: 10px; /* Add padding if desired */        
+        background-color: #fff;
+        margin: 24px 0 0;
+        border-radius: 16px;
+        padding: 24px;
+        cursor: pointer;
+    }  
+    .app-mr-bot {
+        margin-bottom: 10px;
     }
-    .img-2-app-possib {
-        background-image: url(../upload/img/app/img2-1.webp);
-        height: 600px;
-    }
-    
-    .img-3-app-possib {
-        background-image: url(../upload/img/app/img3-1.webp);
-        height: 600px;
-    }
-    
-    .img-4-app-possib {
-        background-image: url(../upload/img/app/img4.webp);
-        height: 600px;
-    }
-    .img-5-app-possib {
-        background-image: url(../upload/img/app/img3-1.webp);
-        height: 600px;
-    }
-    .img-6-app-possib {
-        background-image: url(../upload/img/app/img2.webp);
-        height: 600px;
-    }
-    .img-7-app-possib {
-        background-image: url(../upload/img/app/img3.webp);
-        height: 600px;
-    }
-    
     .main-app {
         flex-wrap: wrap;
         text-align: center;
@@ -337,7 +310,7 @@ canvas {
         -moz-column-gap: 30px;
     }
     .app-container-icons img {
-        width: 50%;
+        width: 100%;
     }
     .appcol1 {
         grid-column: 2;
@@ -351,6 +324,7 @@ canvas {
         display: grid;
         grid-template-columns: 1fr;
         padding-bottom: 24px;
+        gap: 40px;
     }
 }
 
@@ -365,7 +339,7 @@ canvas {
     .max-item {
         width: 100%;
     } 
-    .block-sl {
+    .block-sl, .block-sl2 {
         width: 100%;
     }
     .contr-haps-items {
@@ -373,7 +347,37 @@ canvas {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
+ 
+    .img-1-app-possib {
+        background-image: url(../upload/img/app/img1-1.webp);
+        height: 580px;
+    }
+    .img-2-app-possib {
+        background-image: url(../upload/img/app/img2-1.webp);
+        height: 580px;
+    }
+    
+    .img-3-app-possib {
+        background-image: url(../upload/img/app/img3-1.webp);
+        height: 580px;
+    }
+    
+    .img-4-app-possib {
+        background-image: url(../upload/img/app/img4.webp);
+        height: 580px;
+    }
+    .img-5-app-possib {
+        background-image: url(../upload/img/app/img3-1.webp);
+        height: 580px;
+    }
+    .img-6-app-possib {
+        background-image: url(../upload/img/app/img2.webp);
+        height: 580px;
+    }
+    .img-7-app-possib {
+        background-image: url(../upload/img/app/img3.webp);
+        height: 580px;
+    }
     .main-app {
         padding: 0px 12px;
     }
@@ -386,6 +390,7 @@ canvas {
     }
     .app-container-icons img {
         float: right;
+        width: 25%;
     }
     .app-container-items {
         padding: 24px;
@@ -400,6 +405,10 @@ canvas {
     .app-max-img {
         width: 100%;
         margin: auto;
+    }
+    .contr-gr {
+        margin-bottom: 0;
+        padding: 32px 16px;
     }
     .contr-gr-text h3 {
         padding-bottom: 32px;
