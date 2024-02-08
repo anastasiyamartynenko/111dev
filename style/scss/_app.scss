@@ -158,7 +158,9 @@ canvas {
     border: 1px solid #000;
 }
 
-
+.app-section-2 {
+    margin-top: 12px;
+}
 .img-1-app-possib {
     background-image: url(../upload/img/app/img-1-1.webp);
     background-position: bottom;
@@ -282,11 +284,14 @@ canvas {
         flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
         padding: 10px; /* Add padding if desired */        
         background-color: #fff;
-        margin: 24px 0 0;
+        margin: 20px 0 0;
         border-radius: 16px;
         padding: 24px;
         cursor: pointer;
-    }  
+    }
+    .app-section-2 {
+        margin-top: 40px;
+    }
     .app-mr-bot {
         margin-bottom: 10px;
     }
@@ -303,6 +308,8 @@ canvas {
     }
     .app-container {
         grid-template-columns: 1fr;
+        padding: 20px 0 32px;
+        gap: 12px;
     }
     .app-container-items {
         display: grid;
@@ -311,6 +318,9 @@ canvas {
     }
     .app-container-icons img {
         width: 100%;
+    }
+    .app-section {
+        margin-top: 64px;
     }
     .appcol1 {
         grid-column: 2;
@@ -325,6 +335,13 @@ canvas {
         grid-template-columns: 1fr;
         padding-bottom: 24px;
         gap: 40px;
+    }
+    .app-every {
+        margin-top: 12px;
+    }
+    .app-every .ji-h2-big, .app-max .ji-h2-big {
+        font-size: 26px;
+        line-height: 32.24px;
     }
 }
 
@@ -341,6 +358,9 @@ canvas {
     } 
     .block-sl, .block-sl2 {
         width: 100%;
+    }
+    .contr-haps {
+        padding: 32px 24px;
     }
     .contr-haps-items {
         display: grid;
@@ -390,7 +410,7 @@ canvas {
     }
     .app-container-icons img {
         float: right;
-        width: 25%;
+        width: 54%;
     }
     .app-container-items {
         padding: 24px;
