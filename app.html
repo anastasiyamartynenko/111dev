@@ -30,7 +30,7 @@
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script ript src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    
+
 
     <link rel="stylesheet" href="./style/main.css">
 
@@ -268,29 +268,29 @@
                         <div class="repl-24">
                             <div class="ji-small ji-gray">Срок инвестирования</div>
                             <ul style="padding-left: 0;" class="uk-flex ul-filter"> 
-                                <li class="fil-gr active">5 лет</li>
-                                <li class="fil-gr">10 лет</li>
-                                <li class="fil-gr">20 лет</li>
-                                <li class="fil-gr">30 лет</li>
+                                <li class="fil-gr active" data-years="5">5 лет</li>
+                                <li class="fil-gr" data-years="10">10 лет</li>
+                                <li class="fil-gr" data-years="20">20 лет</li>
+                                <li class="fil-gr" data-years="30">30 лет</li>
                             </ul>
                         </div>
                         <div class="repl-24">
                             <div class="ji-small ji-gray">Доход %, годовых</div>
                             <ul style="padding-left: 0;" class="ul-filter"> 
-                                <li class="fil-gr active">S&P 500 (+25%)</li>
-                                <li class="fil-gr">NASDAQ 100 (+52%)</li>
-                                <li class="fil-gr">Облигации (+20%)</li>
+                                <li class="fil-gr active" data-interest="0.25">S&P 500 (+25%)</li>
+                                <li class="fil-gr" data-interest="0.52">NASDAQ 100 (+52%)</li>
+                                <li class="fil-gr" data-interest="0.20">Облигации (+20%)</li>
                             </ul>
                         </div>                        
                     </div>
                     <div>
                         <div>
                             <div class="ji-body-xs bold">Процентный доход</div>
-                            <div class="ji-h1-cal-app orange" id="interestIncome">300 000 ₸</div>
+                            <div class="ji-h1-cal-app orange" id="interestIncome">0 ₸</div>
                         </div>
                         <div class="padT-16-24">
                             <div class="ji-body-xs bold">Сберегательный счет</div>
-                            <div class="ji-26 ji-gray" id="savingsAccount">120 000 ₸</div>
+                            <div class="ji-26 ji-gray" id="savingsAccount">0 ₸</div>
                         </div>
                         <div class="ji-body-xs ji-gray mt-12">
                             <img src="upload/img/app/Frame_2087325895.png" alt="">
@@ -301,7 +301,7 @@
                             <div>Через 30 лет</div>
                         </div>
                     </div>
-                </div>                
+                </div>             
                
                 <div class="text-center ji-gray ji-small">*Диаграмма представляет собой гипотетическое сравнение. Инвестирование сопряжено с риском потерь, и эффективность не гарантируется.</div>
             </div>
