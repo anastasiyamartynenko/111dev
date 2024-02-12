@@ -5756,6 +5756,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 96px;
 }
 
+.management-cont-2 {
+  margin-top: 60px;
+}
+
 .management {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -5766,6 +5770,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .management-bg img {
   margin-bottom: 24px;
+}
+
+.catalog-block-4 {
+  height: 320px;
 }
 
 @media (max-width: 915px) {
@@ -5790,7 +5798,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 16px;
   }
   .our-team-partner-img {
-    padding-bottom: 40px;
+    padding-bottom: 0;
+    padding-top: 40px;
   }
   .our-team-partner-img-education {
     display: grid;
@@ -5840,6 +5849,28 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .content-block-about-style-2 {
     height: 250px;
+  }
+  .management {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .catalog-block-4 {
+    height: 255px;
+  }
+  .management-bg img {
+    width: 100%;
+  }
+  .management-bg .ji-22 {
+    font-size: 22px;
+  }
+  .management-cont {
+    margin-top: 64px;
+  }
+  .management-cont-2 {
+    margin-top: 32px;
   }
 }
 @media (max-width: 414px) {
