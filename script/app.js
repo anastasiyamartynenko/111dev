@@ -53,3 +53,54 @@ $(document).ready(function(){
     });   
 });
 
+
+Highcharts.setOptions({
+    colors: ['#FF4810', '#AAADB2']
+  });
+  
+  Highcharts.chart('container', {
+      chart: {
+          type: 'column'
+      },
+      title: {
+          text: null
+      },
+      subtitle: {
+          text: null
+      },
+      xAxis: {
+          categories: ['5 лет', '10 лет',  '20 лет', '30 лет']
+      },
+      yAxis: {
+        tickPositions: [20, 25, 52], // Задаем конкретные значения для оси Y
+        labels: {
+            enabled: false // Отключаем отображение текста на оси Y
+        },
+        gridLineWidth: 0, // Скрываем полоски сетки
+        title: {
+            text: null
+        }
+    },
+      tooltip: {
+          pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.0f}%</b><br/>',
+          shared: true
+      },
+      legend: {
+        enabled: false // Убираем легенду (серии под графиком)
+    },
+      plotOptions: {
+          column: {
+              stacking: 'percent'
+          }
+      },
+      series: [
+          {
+            name: 'Процентный доход',
+              data: [1.8,  3.4,  5.7, 6.4]
+          },
+          {
+            name: 'Сберегательный счет',
+              data: [0.2, 3.8, 5.1, 6]
+          },
+      ]
+  });

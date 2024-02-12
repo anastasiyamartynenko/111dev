@@ -26,11 +26,10 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script ript src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
+    <link rel="stylesheet" href="style/invest.chunk.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
     <link rel="stylesheet" href="./style/main.css">
 
@@ -293,8 +292,7 @@
                             <div class="ji-26 ji-gray" id="savingsAccount">0 ₸</div>
                         </div>
                         <div class="ji-body-xs ji-gray mt-12">
-                            <img src="upload/img/app/Frame_2087325895.png" alt="">
-                            <div id="chartdiv"></div>
+                            <div id="container"></div>
                         </div>
                         <div class="uk-flex uk-flex-between ji-18 mt-16">
                             <div>Сегодня</div>
@@ -312,7 +310,6 @@
         </div>
     </div>
 </section>
-
 
 <section class="bg-white section-top mg-48 pad-t-24"  id="ji-cta-link">
     <div class="uk-container invest bg-gray">

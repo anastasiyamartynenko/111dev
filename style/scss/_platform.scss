@@ -234,10 +234,15 @@ margin: 0;
 .app-mr-bot {
     margin-bottom: 8px;
 }
-#chartdiv {
-    width: 100%;
-    height: 500px;
-  }
+#container {
+    min-width: 310px;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+}
+.highcharts-exporting-group, .highcharts-credits, .highcharts-axis {
+    display: none;
+}
 
 @media (max-width: 1045px){
     .main-text-app .ji-h1-big {
