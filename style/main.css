@@ -5555,16 +5555,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 32px;
 }
 
-.w-text-we {
-  width: 620px;
-  margin: auto;
-}
-
-.w-text-we-2 {
-  width: 650px;
-  margin: auto;
-}
-
 .contr-who-items {
   display: grid;
   grid-template-columns: 1fr 640px;
@@ -5582,18 +5572,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .pos-btm .ji-h2 {
-  font-size: 26px;
-  line-height: 32.24px;
+  font-size: 22px;
+  line-height: 27.28px;
 }
 
 .content-block_space {
   height: 100%;
 }
 
-.content-block-about-style, .content-block-about-style-2 {
+.content-block-about-style {
   border-radius: 24px;
-  height: 344px;
+  height: 360px;
   position: relative;
+}
+
+.content-block_style-2 {
+  overflow: hidden;
+  height: 320px;
+  position: relative;
+  border-radius: 24px;
 }
 
 .our-team {
@@ -5639,8 +5636,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cont-podeco {
-  padding-top: 64px;
-  padding-bottom: 32px;
+  padding-top: 96px;
 }
 
 .read-more-content {
@@ -5729,12 +5725,22 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 0;
 }
 
+.content-block-about-style, .content-block-about-style-2 {
+  border-radius: 24px;
+  height: 344px;
+  position: relative;
+}
+
 .content-block-foot-about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-top: 64px;
+  margin-top: 96px;
   padding-bottom: 96px;
+}
+
+.catalog-instrum-foot img {
+  width: 80px;
 }
 
 .pos-btm-2 .ji-h2 {
@@ -5746,20 +5752,22 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 24px;
 }
 
-.catalog-instrum-foot img {
-  width: 80px;
+.management-cont {
+  margin-top: 96px;
 }
 
-.text-priority {
-  margin-top: 48px;
+.management {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-@media (max-width: 1080px) {
-  .content-block-foot-about {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
+.management-bg img {
+  margin-bottom: 24px;
 }
+
 @media (max-width: 915px) {
   .pos-btm {
     padding-right: 24px;
@@ -5775,29 +5783,14 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 @media (max-width: 768px) {
-  .content-block-foot-about {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .pos-btm .ji-h2 {
-    font-size: 22px;
-    line-height: 27.28px;
-  }
-  .contr-who-text .ji-h2-big {
-    font-size: 26px;
-    line-height: 32.24px;
-  }
   .about {
     padding: 48px 12px;
   }
   .philosophy-tx {
     padding-top: 16px;
   }
-  .eco-container {
-    margin-top: 48px;
-  }
   .our-team-partner-img {
-    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .our-team-partner-img-education {
     display: grid;
@@ -5812,14 +5805,11 @@ input[type=number]::-webkit-outer-spin-button {
   .content-block-about-style {
     height: 201px;
   }
-  .content-block-about-style-2 {
-    height: 246px;
-  }
   .pos-btm {
     bottom: 32px;
   }
-  .content-block-why-flex .catalog-block-2 {
-    height: 255px;
+  .content-block-why-flex .catalog-block-3 {
+    height: 237px;
   }
   .contr-who-items {
     grid-template-columns: 1fr;
@@ -5832,31 +5822,27 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     height: 256px;
   }
-  .w-text-we {
-    width: 100%;
+  .logo-eco img {
+    width: 39%;
+    margin-bottom: 32px;
   }
-  .about-video {
-    margin-top: 32px;
+  .text-eco {
+    padding-bottom: 16px;
   }
-  .contr-who {
-    margin-top: 24px;
+  .content-block-foot-about {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 64px;
+    padding-bottom: 72px;
   }
-  .contr-who .ji-h1 {
-    font-size: 22px;
-    line-height: 27.28px;
+  .cont-podeco {
+    padding-top: 64px;
   }
-  .block-we-guided .ji-h2-big {
-    font-size: 26px;
-    line-height: 32.24px;
-  }
-  .text-priority {
-    margin-top: 32px;
+  .content-block-about-style-2 {
+    height: 250px;
   }
 }
-@media (max-width: 460px) {
-  .block-we-guided .content-block-why .catalog-content-block img {
-    width: 90%;
-  }
+@media (max-width: 414px) {
   .about-video {
     height: 170px;
   }
@@ -5866,9 +5852,6 @@ input[type=number]::-webkit-outer-spin-button {
   .eco-container {
     margin-top: 48px;
     padding: 32px 24px 40px;
-  }
-  .cont-podeco {
-    padding-bottom: 0;
   }
   .content-block-about-style {
     height: 214px;
