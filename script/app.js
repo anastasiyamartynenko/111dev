@@ -59,55 +59,54 @@ $(document).ready(function(){
     $(".block-sl-5").addClass("active");
     showProgress($(".block-sl-5")); // Показывать индикатор выполнения для первого блока при загрузке страницы
 
-    function autoPlay() {
-        if (!isPaused) {
-            var currentActive = $(".block-sl2.active").index();
-            var nextActive = (currentActive + 1) % $(".block-sl2").length;
+    $(".block-sl2-progress").on("animationend", function(){
+        var currentActive = $(".block-sl2.active").index();
+        var nextActive = (currentActive + 1) % $(".block-sl2").length;
 
-            $(".block-sl2").removeClass("active");
-            $(".block-sl2").eq(nextActive).addClass("active");
+        $(".block-sl2").removeClass("active");
+        $(".block-sl2").eq(nextActive).addClass("active");
 
-            $(".block-sl-5-img, .block-sl-6-img, .block-sl-7-img").hide();
-            $(".block-sl-" + (nextActive + 5) + "-img").show();
+        $(".block-sl-5-img, .block-sl-6-img, .block-sl-7-img").hide();
+        $(".block-sl-" + (nextActive + 5) + "-img").show();
 
-            var $nextBlock = $(".block-sl-" + (nextActive + 5));
-            showProgress($nextBlock);
+        var $nextBlock = $(".block-sl-" + (nextActive + 5));
+        showProgress($nextBlock);
 
-            // Скрыть индикатор выполнения предыдущего блока
-            var $prevBlock = $(".block-sl-" + (currentActive + 5));
-            hideProgress($prevBlock);
-        }
-    }
+        // Скрыть индикатор выполнения предыдущего блока
+        var $prevBlock = $(".block-sl-" + (currentActive + 5));
+        hideProgress($prevBlock);
+    })
 
-    autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
+    // autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
+
 
     var progressAnimationTimer;
     
-$(".block-sl2").mouseenter(function() {
-    if (!$(this).hasClass("active")) {
-        // Если блок не активен, то просто выходим из обработчика события
-        return;
-    }
+    $(".block-sl2").mouseenter(function() {
+            if (!$(this).hasClass("active")) {
+                // Если блок не активен, то просто выходим из обработчика события
+                return;
+            }
 
-    isPaused = true;
-    clearInterval(autoplayIntervalID); // Остановить автовоспроизведение при наведении курсора на активный блок
-    var $progressBar = $(this).find(".block-sl2-progress");
-    $progressBar.data("wasRunning", $progressBar.css("animation-play-state") === "running");
-    $progressBar.css("animation-play-state", "paused"); // Приостановить анимацию индикатора выполнения
-}).mouseleave(function() {
-    if (!$(this).hasClass("active")) {
-        // Если блок не активен, то просто выходим из обработчика события
-        return;
-    }
+            isPaused = true;
+            // clearInterval(autoplayIntervalID); // Остановить автовоспроизведение при наведении курсора на активный блок
+            var $progressBar = $(this).find(".block-sl2-progress");
+            $progressBar.data("wasRunning", $progressBar.css("animation-play-state") === "running");
+            $progressBar.css("animation-play-state", "paused"); // Приостановить анимацию индикатора выполнения
+        }).mouseleave(function() {
+            if (!$(this).hasClass("active")) {
+                // Если блок не активен, то просто выходим из обработчика события
+                return;
+            }
 
-    isPaused = false;
-    var $progressBar = $(this).find(".block-sl2-progress");
-    if ($progressBar.data("wasRunning")) {
-        $progressBar.css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
-        autoplayIntervalID = setInterval(autoPlay, autoplayInterval); // Возобновить автовоспроизведение
-    }
-});
-});
+            isPaused = false;
+            var $progressBar = $(this).find(".block-sl2-progress");
+            if ($progressBar.data("wasRunning")) {
+                $progressBar.css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
+                // autoplayIntervalID = setInterval(autoPlay, autoplayInterval); // Возобновить автовоспроизведение
+            }
+        });
+    });
 
 
 
