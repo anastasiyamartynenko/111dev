@@ -81,52 +81,32 @@ $(document).ready(function(){
 
     autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
 
-    $(".block-sl2").click(function() {
-        clearInterval(autoplayIntervalID);
-        $(".block-sl2").removeClass("active");
-        $(this).addClass("active");
-        var index = $(this).index();
-        $(".block-sl-5-img, .block-sl-6-img, .block-sl-7-img").hide();
-        $(".block-sl-" + (index + 5) + "-img").show();
-        showProgress($(this));
-        autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
-    });
-
     var progressAnimationTimer;
     
-    $(".block-sl2").mouseenter(function() {
-        if (!$(this).hasClass("active")) {
-            // Если блок не активен, то просто выходим из обработчика события
-            return;
-        }
-    
-        isPaused = true;
-        clearInterval(autoplayIntervalID); // Остановить автовоспроизведение при наведении курсора на активный блок
-        progressAnimationDuration = parseInt($(this).find(".block-sl2-progress").css("animation-duration")); // Сохранить текущую продолжительность анимации индикатора выполнения
-        $(this).find(".block-sl2-progress").css("animation-play-state", "paused"); // Приостановить анимацию индикатора выполнения
-    }).mouseleave(function() {
-        if (!$(this).hasClass("active")) {
-            // Если блок не активен, то просто выходим из обработчика события
-            return;
-        }
-    
-        isPaused = false;
-        autoplayIntervalID = setInterval(autoPlay, autoplayInterval); // Возобновить автовоспроизведение, когда мышь покидает активный блок
-    
-        // Рассчитать оставшееся время анимации индикатора выполнения
-        remainingAnimationTime = progressAnimationDuration - (performance.now() - animationStartTime);
-        if (remainingAnimationTime > 0) {
-            // Установить оставшуюся продолжительность анимации
-            $(this).find(".block-sl2-progress").css("animation-duration", remainingAnimationTime + "ms");
-            // Установить время начала анимации на текущее время минус оставшееся время анимации
-            animationStartTime = performance.now() - remainingAnimationTime;
-        }
-    
-        $(this).find(".block-sl2-progress").css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
-        
-        // Запустить автовоспроизведение после возобновления анимации
-        autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
-    });
+$(".block-sl2").mouseenter(function() {
+    if (!$(this).hasClass("active")) {
+        // Если блок не активен, то просто выходим из обработчика события
+        return;
+    }
+
+    isPaused = true;
+    clearInterval(autoplayIntervalID); // Остановить автовоспроизведение при наведении курсора на активный блок
+    var $progressBar = $(this).find(".block-sl2-progress");
+    $progressBar.data("wasRunning", $progressBar.css("animation-play-state") === "running");
+    $progressBar.css("animation-play-state", "paused"); // Приостановить анимацию индикатора выполнения
+}).mouseleave(function() {
+    if (!$(this).hasClass("active")) {
+        // Если блок не активен, то просто выходим из обработчика события
+        return;
+    }
+
+    isPaused = false;
+    var $progressBar = $(this).find(".block-sl2-progress");
+    if ($progressBar.data("wasRunning")) {
+        $progressBar.css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
+        autoplayIntervalID = setInterval(autoPlay, autoplayInterval); // Возобновить автовоспроизведение
+    }
+});
 });
 
 
