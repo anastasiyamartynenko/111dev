@@ -222,6 +222,8 @@ margin: 0;
 .block-sl, .block-sl2 {
     padding: 24px;
     margin: 24px 0;
+    position: relative;
+    overflow: hidden;
 }
 .block-sl.active, .block-sl2.active {
     background-color: #ffff; 
@@ -243,6 +245,28 @@ margin: 0;
 .highcharts-exporting-group, .highcharts-credits, .highcharts-axis {
     display: none;
 }
+.block-sl2-progress {
+    background-color: #FF4810;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Начальная ширина полоски 0 */
+    height: 4px;
+    display: none;
+    animation: progress 6s ease-in-out infinite; /* Добавляем анимацию */
+}
+
+@keyframes progress {
+    0% {
+        width: 0; /* Начальная ширина полоски 0 */
+    }
+    100% {
+        width: 100%; /* Полная ширина блока при завершении анимации */
+    }
+}
+
+
+
 
 @media (max-width: 1045px){
     .main-text-app .ji-h1-big {
