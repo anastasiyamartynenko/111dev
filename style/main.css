@@ -5077,10 +5077,6 @@ a:hover.text-orange {
   transition: 0.3s;
 }
 
-.app-container-icons img {
-  width: 31%;
-}
-
 .main-app {
   margin-top: 24px;
   margin-bottom: 36px !important;
@@ -5376,10 +5372,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 @media (max-width: 880px) {
-  .fl-mobPrdo {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    margin-right: -24px; /* Компенсируем отступ справа */
-  }
   .scroll-container {
     display: flex;
     width: 360px;
@@ -5546,6 +5538,12 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .padT-16-24 {
     padding-top: 24px;
+  }
+  .block-sl-5-img, .block-sl-6-img, .block-sl-7-img {
+    display: none;
+  }
+  .block-sl2.active {
+    display: block;
   }
 }
 @media (max-width: 390px) {

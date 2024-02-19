@@ -19,7 +19,7 @@ document.getElementById("header").innerHTML = `
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/junior" class="header-links">Junior</a></li> 
                 <li class="uk-parent"><a href="#" class="header-links"> Еще</a>
                 <div class="uk-dropdown header-links-dropdown">
-                  <div class="uk-child-width-1-1 uk-flex" >
+                  <div class="uk-child-width-1-1" >
                       <div>
                           <ul class="uk-nav uk-dropdown-nav">
                               <li><a href="https://www.jusaninvest.kz/radar" class="ji-body-s ji-link"> Radar</a></li>

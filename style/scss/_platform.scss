@@ -20,9 +20,7 @@
     padding: 36px 32px 48px 32px;
     transition: 0.3s;
 }
-.app-container-icons img {
-    width: 31%;
-}
+
 .main-app {
     margin-top: 24px;
     margin-bottom: 36px!important;
@@ -253,7 +251,7 @@ margin: 0;
     width: 0; /* Начальная ширина полоски 0 */
     height: 4px;
     display: none;
-    animation: progress 6s ease-in-out infinite; /* Добавляем анимацию */
+    animation: progress 6s ease-in-out; /* Добавляем анимацию */
 }
 
 @keyframes progress {
@@ -295,10 +293,6 @@ margin: 0;
 
 @media (max-width: 880px){ 
 
-    .fl-mobPrdo {
-        overflow-x: auto; /* Enable horizontal scrolling */
-        margin-right: -24px; /* Компенсируем отступ справа */
-    }
     
     .scroll-container {
         display: flex;
@@ -472,6 +466,14 @@ margin: 0;
     .padT-16-24 {
         padding-top: 24px;
     }
+    .block-sl-5-img, .block-sl-6-img, .block-sl-7-img {
+        display: none;
+    }
+
+    .block-sl2.active {
+        display: block;
+    }
+    
 }
 
 @media (max-width: 390px){ 

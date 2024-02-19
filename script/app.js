@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 
 //* Слайд "Первое правило инвестиций *//
-$(document).ready(function(){
+$(document).ready(function(){    
     var autoplayInterval = 3000; // Продолжительность интервала автовоспроизведения в миллисекундах
     var autoplayIntervalID; // Идентификатор интервала автовоспроизведения
     var animationStartTime; // Время начала анимации индикатора выполнения
@@ -75,6 +75,12 @@ $(document).ready(function(){
         // Скрыть индикатор выполнения предыдущего блока
         var $prevBlock = $(".block-sl-" + (currentActive + 5));
         hideProgress($prevBlock);
+
+         // Для мобильных устройств
+         if ($(window).width() <= 767) {
+            $(".block-sl2").hide();
+            $(".block-sl-" + (nextActive + 5)).show();
+        }
     })
 
     // autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
@@ -106,7 +112,8 @@ $(document).ready(function(){
                 // autoplayIntervalID = setInterval(autoPlay, autoplayInterval); // Возобновить автовоспроизведение
             }
         });
-    });
+});
+
 
 
 
