@@ -1,33 +1,103 @@
-//* Слайд "Максимум возможностей" *//
-$(document).ready(function(){
-    // Показать и сделать активным block-sl-1-img при загрузке страницы
+$(document).ready(function(){    
+    var autoplayInterval = 3000; // Продолжительность интервала автовоспроизведения в миллисекундах
+    var autoplayIntervalID; // Идентификатор интервала автовоспроизведения
+    var animationStartTime; // Время начала анимации индикатора выполнения
+    var progressAnimationDuration; // Продолжительность анимации индикатора выполнения
+    var remainingAnimationTime; // Оставшееся время анимации индикатора выполнения
+    var isPaused = false; // Флаг для отслеживания, если автовоспроизведение приостановлено из-за наведения мыши
+
+    function showProgress($block) {
+        $block.find(".block-sl-progress").show(); 
+
+        progressAnimationDuration = autoplayInterval;
+        $block.find(".block-sl-progress").css("animation-duration", progressAnimationDuration + "ms");
+
+        // Установить время начала анимации
+        animationStartTime = performance.now();
+    }
+
+    function hideProgress($block) {
+        $block.find(".block-sl-progress").hide();
+    }
+
     $(".block-sl-1-img").show();
-    $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide(); // Скрыть остальные изображения
+    $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide();
     $(".block-sl-1").addClass("active");
+    showProgress($(".block-sl-1")); 
 
-    // Обработчики событий hover для блоков
-    $(".block-sl").hover(function(){
-        $(".block-sl").removeClass("active"); // Удалить класс active у всех блоков
-        $(this).addClass("active"); // Добавить класс active блоку, на который навели курсор
+    $(".block-sl-progress").on("animationend", function(){
+        var currentActive = $(".block-sl.active").index();
+        var nextActive = (currentActive + 1) % $(".block-sl").length;
+
+        $(".block-sl").removeClass("active");
+        $(".block-sl").eq(nextActive).addClass("active");
+
+        $(".block-sl-1-img, .block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide();
+        $(".block-sl-" + (nextActive + 1) + "-img").show();
+
+        var $nextBlock = $(".block-sl-" + (nextActive + 1));
+        showProgress($nextBlock);
+
+        // Скрыть индикатор выполнения предыдущего блока
+        var $prevBlock = $(".block-sl-" + (currentActive + 1));
+        hideProgress($prevBlock);
     });
 
-    $(".block-sl-2").hover(function(){
-        $(".block-sl-2-img").show();
-        $(".block-sl-1-img, .block-sl-3-img, .block-sl-4-img").hide();
-    });
-    $(".block-sl-3").hover(function(){
-        $(".block-sl-3-img").show();
-        $(".block-sl-1-img, .block-sl-2-img, .block-sl-4-img").hide();
-    });
-    $(".block-sl-4").hover(function(){
-        $(".block-sl-4-img").show();
-        $(".block-sl-1-img, .block-sl-2-img, .block-sl-3-img").hide();
-    });
-    $(".block-sl-1").hover(function(){
-        $(".block-sl-1-img").show();
-        $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide();
+    var progressAnimationTimer;
+    
+    $(".block-sl").mouseenter(function() {
+        if (!$(this).hasClass("active")) {           
+            return;
+        }
+
+        isPaused = true;
+        var $progressBar = $(this).find(".block-sl-progress");
+        $progressBar.data("wasRunning", $progressBar.css("animation-play-state") === "running");
+        $progressBar.css("animation-play-state", "paused"); 
+    }).mouseleave(function() {
+        if (!$(this).hasClass("active")) {
+            // Если блок не активен, то просто выходим из обработчика события
+            return;
+        }
+
+        isPaused = false;
+        var $progressBar = $(this).find(".block-sl-progress");
+        if ($progressBar.data("wasRunning")) {
+            $progressBar.css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
+        }
     });
 });
+
+//* Слайд "Максимум возможностей" *//
+// $(document).ready(function(){
+//     // Показать и сделать активным block-sl-1-img при загрузке страницы
+//     $(".block-sl-1-img").show();
+//     $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide(); // Скрыть остальные изображения
+//     $(".block-sl-1").addClass("active");
+
+//     // Обработчики событий hover для блоков
+//     $(".block-sl").hover(function(){
+//         $(".block-sl").removeClass("active"); // Удалить класс active у всех блоков
+//         $(this).addClass("active"); // Добавить класс active блоку, на который навели курсор
+//     });
+
+//     $(".block-sl-2").hover(function(){
+//         $(".block-sl-2-img").show();
+//         $(".block-sl-1-img, .block-sl-3-img, .block-sl-4-img").hide();
+//     });
+//     $(".block-sl-3").hover(function(){
+//         $(".block-sl-3-img").show();
+//         $(".block-sl-1-img, .block-sl-2-img, .block-sl-4-img").hide();
+//     });
+//     $(".block-sl-4").hover(function(){
+//         $(".block-sl-4-img").show();
+//         $(".block-sl-1-img, .block-sl-2-img, .block-sl-3-img").hide();
+//     });
+//     $(".block-sl-1").hover(function(){
+//         $(".block-sl-1-img").show();
+//         $(".block-sl-2-img, .block-sl-3-img, .block-sl-4-img").hide();
+//     });
+// });
 
 
 //* Слайд "Первое правило инвестиций *//
