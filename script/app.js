@@ -39,8 +39,14 @@ $(document).ready(function(){
         showProgress($nextBlock);
 
         // Скрыть индикатор выполнения предыдущего блока
-        var $prevBlock = $(".block-sl-" + (currentActive + 1));
+        var $prevBlock = $(".block-sl-" + (currentActive + 5));
         hideProgress($prevBlock);
+
+         // Для мобильных устройств
+         if ($(window).width() <= 767) {
+            $(".block-sl").hide();
+            $(".block-sl-" + (nextActive + 1)).show();
+        }
     });
 
     var progressAnimationTimer;
@@ -123,10 +129,10 @@ $(document).ready(function(){
     function hideProgress($block) {
         $block.find(".block-sl2-progress").hide(); // Скрыть индикатор выполнения для неактивного блока
     }
-
     $(".block-sl-5-img").show();
     $(".block-sl-6-img, .block-sl-7-img").hide();
     $(".block-sl-5").addClass("active");
+
     showProgress($(".block-sl-5")); // Показывать индикатор выполнения для первого блока при загрузке страницы
 
     $(".block-sl2-progress").on("animationend", function(){
@@ -154,16 +160,12 @@ $(document).ready(function(){
     })
 
     // autoplayIntervalID = setInterval(autoPlay, autoplayInterval);
-
-
-    var progressAnimationTimer;
-    
+    var progressAnimationTimer;    
     $(".block-sl2").mouseenter(function() {
             if (!$(this).hasClass("active")) {
                 // Если блок не активен, то просто выходим из обработчика события
                 return;
             }
-
             isPaused = true;
             // clearInterval(autoplayIntervalID); // Остановить автовоспроизведение при наведении курсора на активный блок
             var $progressBar = $(this).find(".block-sl2-progress");
@@ -185,6 +187,62 @@ $(document).ready(function(){
 });
 
 
+// КАЛЬКУЛЯТОР platform
+document.addEventListener('DOMContentLoaded', function() {
+    // Получение всех необходимых элементов
+    var initialMoneyInput = document.getElementById('initialMoneyInput');
+    var replenishmentMoneyInput = document.getElementById('replenishmentMoneyInput');
+    var yearsSelect = document.querySelectorAll('.ul-filter li[data-years]');
+    var interestSelect = document.querySelectorAll('.ul-filter li[data-interest]');
+    var interestIncome = document.getElementById('interestIncome');
+
+    // Обработчик события изменения значений
+    var calculateInterest = function() {
+        var P = parseFloat(initialMoneyInput.value); // Начальная сумма
+        var PMT = parseFloat(replenishmentMoneyInput.value); // Ежемесячное пополнение
+        var r = parseFloat(document.querySelector('.ul-filter li.active[data-interest]').getAttribute('data-interest')); // Годовая процентная ставка
+        var t = parseFloat(document.querySelector('.ul-filter li.active[data-years]').getAttribute('data-years')); // Срок инвестирования в годах
+
+        var n = 12; // Количество периодов в году (ежемесячное пополнение)
+        var FV = P * Math.pow(1 + r / n, n * t) + PMT * ((Math.pow(1 + r / n, n * t) - 1) / (r / n)); // Будущая стоимость
+
+        // Вычисление процентного дохода
+        var totalReplenishments = PMT * 12 * t;
+        var totalInitialInvestment = P + totalReplenishments;
+        var percentIncome = ((FV - totalInitialInvestment) / totalInitialInvestment) * 100;
+
+        // Вывод результата
+        interestIncome.textContent = percentIncome.toFixed(2) + ' ₸';
+    };
+
+    // Обработчики событий для изменения выбранных параметров
+    yearsSelect.forEach(function(item) {
+        item.addEventListener('click', function() {
+            yearsSelect.forEach(function(elem) {
+                elem.classList.remove('active');
+            });
+            this.classList.add('active');
+            calculateInterest();
+        });
+    });
+
+    interestSelect.forEach(function(item) {
+        item.addEventListener('click', function() {
+            interestSelect.forEach(function(elem) {
+                elem.classList.remove('active');
+            });
+            this.classList.add('active');
+            calculateInterest();
+        });
+    });
+
+    // Обработчик события ввода значений в инпуты
+    initialMoneyInput.addEventListener('input', calculateInterest);
+    replenishmentMoneyInput.addEventListener('input', calculateInterest);
+
+    // Изначально вычисляем процентный доход
+    calculateInterest();
+});
 
 
 
