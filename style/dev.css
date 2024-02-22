@@ -700,6 +700,13 @@ span {
 
 
 @media (max-width: 768px){
+    .dev-que {
+        height: 100px;
+        font-size: 24px;
+    }
+    .dev5, .dev-6 {
+        width: 100%;
+    }
     .indict {
         bottom: -38px;
     }
@@ -886,11 +893,11 @@ span {
         border: none;
     }
     .swp {
+        padding-bottom: 20px;
         list-style: none;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
-        padding: 0;
         position: relative;
         z-index: 1;
         overflow-x: auto;
