@@ -282,11 +282,12 @@ td .active {
 .border-top {
     border-top:none!important;
 }
-.dev-que {
+.dev-que p {
     font-size: 26px;
     line-height: 33.28px;
     font-weight: 600;
-    border: none;
+    padding-right: 20px;
+    align-items: flex-end;
 }
 .tizer-dev {
     text-align: center;
@@ -303,7 +304,18 @@ td .active {
 .dev-que {
     height: 130px;
     vertical-align: middle;
-    text-align: left;
+    text-align: left;    
+    display: block;
+    border: none;
+}
+.dev-que:after {
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 20px;
+
 }
 .accordion-body {
     padding: 0;
@@ -622,6 +634,11 @@ span {
     position: absolute;
     bottom: 64px;
 }
+.dev-que span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
 
 
 @media (max-width: 1270px){
@@ -694,6 +711,9 @@ span {
     .ac-toWho2 {
         gap: 24px;
         padding: 0;
+    }
+    .dev-que p {
+        padding-right: 30px;
     }
 }
 
@@ -975,6 +995,9 @@ span {
     .dis-block {
         display: block;
         margin: 0!important;
+    }
+    .footer-copyright {
+        padding-bottom: 150px;
     }
     .footer-copyright-text {
         padding-top: 20px;
