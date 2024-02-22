@@ -159,11 +159,20 @@ td .active {
 }
 .ji-h2-stat {
     font-size: 40px;
-    line-height: 51.2px;
+    line-height: 48px;
     font-weight: 600;
 }
 .m-b-40 {
       padding-bottom: 40px;  
+}
+.dev5 {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.dev-6 {
+    width: 500px;
+    margin: auto;
 }
 .section {
     padding-top: 40px;
@@ -257,7 +266,8 @@ td .active {
 .dev4-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;   
+    column-gap: 30px;
+    padding-bottom: 20px;
     align-items: start;
 }
 .text-width {
@@ -270,12 +280,13 @@ td .active {
     align-items: start;
 }
 .border-top {
-    border-top: 2px solid rgba(190, 190, 182, 0.2);
+    border-top:none!important;
 }
 .dev-que {
     font-size: 26px;
     line-height: 33.28px;
     font-weight: 600;
+    border: none;
 }
 .tizer-dev {
     text-align: center;
@@ -300,8 +311,11 @@ td .active {
 .show {
    padding-bottom: 32px; 
 }
-.accordion-item.accordion-ques:nth-last-child(-n+1) {
-    border-bottom: 2px solid rgba(190, 190, 182, 0.2);
+.ji-que {
+    border: none;
+}
+.accordion-item.accordion-ques:nth-last-child(-n+1), .accordion-item.accordion-ques {
+    border-bottom: 1px solid rgba(190, 190, 182, 0.2);
 }
 .pad-b-16 {
     padding-bottom: 16px;
@@ -368,7 +382,7 @@ td .active {
 }
 .footer-copyright {
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 50px;
 }
 .form-cont {
     padding: 80px 64px;
@@ -435,7 +449,7 @@ label {
     width: 300px;   
 }
 .calc-btn  {
-    padding-top: 24px;   
+    padding-top: 14px;   
 }
 .confirm {
     font-size: 14px;
@@ -457,6 +471,15 @@ label {
     line-height: 26px;
     font-weight: 500;
     padding-bottom: 24px;
+}
+span {
+    font-size: inherit;
+}
+.ji-h3-stat {
+    font-family: 'JB_Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28.16px;
+    font-weight: 600;
 }
 .cupon-cont .bold {
     color: #201F1F;
