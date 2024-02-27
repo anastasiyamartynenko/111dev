@@ -1266,7 +1266,7 @@ ul {
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  background: #fff;
+  background: #cdcdcd;
 }
 
 @media (max-width: 768px) {
@@ -1503,6 +1503,7 @@ a.three-step-head, a.three-step-head-2 {
   display: block;
   background-size: cover;
   background-position: center;
+  border-radius: 24px;
 }
 
 .ji-fon-invest-kz {
@@ -1542,6 +1543,44 @@ a.three-step-head, a.three-step-head-2 {
   background-position: bottom;
   background-size: contain;
   display: block;
+}
+
+.ji-bg-obl {
+  background: url(./../assets/img/dev-des/bi-desk.png);
+  border-radius: 12px;
+  height: 460px !important;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 80%;
+  display: block;
+}
+
+a:hover .swp-text .ji-h1, a:hover .swp-text .ji-body-m {
+  color: black;
+}
+
+.ji-bg-obl .swp-text .ji-h1 {
+  color: #201F1F;
+  font-weight: 600;
+}
+
+.swp-text .ji-body-m {
+  color: #201F1F;
+  font-weight: 500;
+}
+
+.ji-bg-obl .swp-text .ji-h1 span {
+  font-weight: 600;
+}
+
+a:hover.ji-bg-obl .swp-text .ji-h1 {
+  color: #201F1F;
+}
+
+.ji-fon-obl {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .ji-body-m {
@@ -2174,6 +2213,9 @@ a:hover.block-swiper {
     padding-bottom: 20px;
   }
   .ji-bg-org {
+    height: 200px !important;
+  }
+  .ji-bg-obl {
     height: 200px !important;
   }
   .ji-fon-invest-kz {

@@ -1,5 +1,5 @@
 document.getElementById("header").innerHTML = `
-
+ 
 <header class="bg-white">
    <div class="uk-container">
     <div class="uk-navbar-container tm-navbar-container uk-sticky" >
@@ -7,25 +7,25 @@ document.getElementById("header").innerHTML = `
         <nav class="" uk-dropnav="mode: click">
           <div class="uk-flex nav-top">
             <div>
-              <a href="https://www.jusaninvest.kz/kz" class="d-lg-block"><img src="../assets/img/icons/ji-logo.svg"  alt="logo"></a>
+              <a href="https://www.jusaninvest.kz/kz/main" class="d-lg-block"><img src="../../assets/img/icons/ji-logo.svg"  alt="logo"></a>
             </div>
             <div>
               <ul class="uk-subnav header-links-cont uk-visible@m">
-                <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/tariffs" class="header-links"> Тарифтер</a></li> 
-                <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/demo" class="header-links"> Демо-счет</a></li> 
+                <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/tariffs" class="header-links">Тарифтер</a></li> 
+                <li class="uk-parent"><a href="https://www.jusaninvest.kz/demo" class="header-links">Демо-счет</a></li> 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/academy" class="header-links">Academy</a></li> 
-                <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/ipif" class="header-links"> ИПҚ-лар</a></li> 
+                <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/ipif" class="header-links">ИПҚ-лар</a></li> 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/pension" class="header-links">Зейнетақы активтері</a></li> 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/kz/junior" class="header-links">Junior</a></li> 
-                <li class="uk-parent"><a href="#" class="header-links"> Көбірек</a>
-                <div class="uk-dropdown header-links-dropdown">
-                  <div class="uk-child-width-1-1 uk-flex" >
+                <li class="uk-parent"><a href="#" class="header-links">Көбірек</a>
+                <div uk-dropdown class="header-links-dropdown">
+                  <div class="uk-child-width-1-1" >
                       <div>
                           <ul class="uk-nav uk-dropdown-nav">
                               <li><a href="https://www.jusaninvest.kz/kz/radar" class="ji-body-s ji-link"> Radar</a></li>
                               <li><a href="https://www.jusaninvest.kz/kz/analytic" class="ji-body-s ji-link"> Аналитика</a></li> 
 
-                              <li class="ji-midle header-links-link">Инвестору</li>
+                              <li class="ji-midle header-links-link">Инвесторға</li>
                               <li><a href="https://trading.jusaninvest.kz" class="ji-body-s ji-link">Веб-платформа</a></li>
                               <li><a href="https://www.jusaninvest.kz/kz/how-to-top-up" class="ji-body-s ji-link">Шотты толтыру</a></li>
                               <li><a href="https://www.jusaninvest.kz/kz/trading" class="ji-body-s ji-link">Трейдинг</a></li>
@@ -34,12 +34,12 @@ document.getElementById("header").innerHTML = `
                       </div>
                       <div>
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class="ji-midle header-links-link">Информация</li>                            
+                            <li class="ji-midle header-links-link">Ақпарат</li>                            
                             <li><a href="https://www.jusaninvest.kz/kz/about" class="ji-body-s ji-link">Компания туралы</a></li>                 
                             <li><a href="https://www.jusaninvest.kz/kz/company-news" class="ji-body-s ji-link">Жаңалықтар</a></li>
                             <li><a href="https://www.jusaninvest.kz/kz/corporate-documents" class="ji-body-s ji-link">Құжаттар</a></li>  
                             <li><a href="https://www.jusaninvest.kz/kz/esg" class="ji-body-s ji-link">ESG </a></li>
-                            <li><a href="https://www.jusaninvest.kz/kz/contacts" class="ji-link ji-body-s">Байланысу үшін </a></li>
+                            <li><a href="https://www.jusaninvest.kz/kz/contacts" class="ji-link ji-body-s">Байланысу үшін</a></li>
                         </ul>
                       </div>
                     </div>
@@ -53,7 +53,7 @@ document.getElementById("header").innerHTML = `
                   <button class="uk-button btn-language" type="button">RU</button>
                   <div uk-dropdown="pos: top-left" class="nav-language">
                     <ul class="uk-nav uk-dropdown-nav">
-                      <li><a href="/"><div class="bag-lang">RU</div> русский</a></li>
+                      <li><a href="/"><div class="bag-lang">RU</div> орыс</a></li>
                       <li><a href="/kz/main"><div class="bag-lang">KZ</div> қазақша</a></li>                
                     </ul>
                   </div>
@@ -65,7 +65,7 @@ document.getElementById("header").innerHTML = `
             <div class="btn-desctop">
               <a uk-toggle="target: #modal-example" class="ji-orange-btn" tabindex="0" role="button">
                 <div class="btn-open">
-                Шот ашыңыз
+                Брокерлік шот ашыңыз
                 </div>
               </a>
             </div>
@@ -75,7 +75,7 @@ document.getElementById("header").innerHTML = `
     </div>
   </div>  
 </header>
-  <header id="scroll-header" class="header scroll-block">
+  <!--<header id="scroll-header" class="header scroll-block">
     <div class="container bg-white">
       <div class="">
         <div class="uk-flex-middle uk-flex-between d-flex header-logo">
@@ -90,17 +90,17 @@ document.getElementById("header").innerHTML = `
           </div>
           <a uk-toggle="target: #modal-example" class="ji-btn-border-org">
             <div class="btn-open">
-            Шот ашыңыз
+            Брокерлік шот ашыңыз
             </div>
           </a>
         </div>
       </div>
     </div>
-  </header>   
+  </header>   -->
     
 <!-- nav menu offcanvas-->
 <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas" tabindex="-1">
-    <div class="uk-offcanvas-bar" role="dialog" aria-modal="true">
+    <div class="uk-offcanvas-bar offcanvs-w100" role="dialog" aria-modal="true">
       <button class="uk-offcanvas-close close-canvas" type="button" uk-close></button>
       <div class="text-menu-canvas">Меню</div>
       <div class="uk-panel">
@@ -115,7 +115,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
                 <div class="accordion-header footer-color-h ji-body-xs">
-                    <a href="https://www.jusaninvest.kz/kz/demo" class="header-links d-flex">
+                    <a href="https://www.jusaninvest.kz/demo" class="header-links d-flex">
                         <span>Демо-счет</span>
                     </a>
                 </div>
@@ -130,8 +130,7 @@ document.getElementById("header").innerHTML = `
             <div class="accordion-item">
                 <div class="accordion-header ji-body-xs footer-color-h" id="headingTwo">
                   <a href="https://www.jusaninvest.kz/kz/pifs" class="header-links d-flex" style="font-size: 1rem; font-weight: 500;">
-                    <span>ИПҚ-лар
-                    </span>
+                    <span> ИПҚ-лар</span>
                   </a>
                 </div>
             </div>
@@ -165,7 +164,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">                  
-                  <div style="color:#898D94; padding: 15px 0 7.5px 0">Инвестору</div>                
+                  <div style="color:#898D94; padding: 25px 0 7px 0">Инвесторға</div>                
               </div>
             </div>
             <div class="accordion-item">
@@ -198,7 +197,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">                  
-                  <div style="color:#898D94; padding: 15px 0 7.5px 0">Информация</div>                
+                  <div style="color:#898D94; padding: 25px 0 7px 0">Ақпарат</div>                
               </div>
             </div>
             <div class="accordion-item">
@@ -224,7 +223,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">
-                  <a href="https://www.jusaninvest.kz/k/esg" class="header-links d-flex" style="font-size: 1rem; font-weight: 500;">
+                  <a href="https://www.jusaninvest.kz/kz/esg" class="header-links d-flex" style="font-size: 1rem; font-weight: 500;">
                       <span>ESG</span>
                   </a>
               </div>
@@ -237,7 +236,7 @@ document.getElementById("header").innerHTML = `
               </div>
             </div>
             <div>
-              <a href="https://jusan.me/FCkd/mogj0gqt" target="_blank" class="btn-mob btn-canvas-menu ji-orange-btn">Шот ашыңыз</a>  
+              <a href="https://jusan.me/FCkd/mogj0gqt" target="_blank" class="btn-mob btn-canvas-menu ji-orange-btn">Открыть счет</a>  
             </div>
 
           </div>               
@@ -255,93 +254,91 @@ document.getElementById("header").innerHTML = `
             <button type="button" class="uk-modal-close btn-close close"></button>
          </div>  
         <div class="modal-body">
-            <img src="assets/img/gift-shares/qr.svg" alt="qr">
+            <img src="../assets/img/gift-shares/qr.svg" alt="qr">
             <div class="info-block">
-            <p class="info-block-title">Наведите камеру на QR-код</p><p class="info-block-text pad-t-12">чтобы скачать мобильное приложение Jusan</p>
+            <p class="info-block-title">Камераны QR-кодқа қаратыңыз</p><p class="info-block-text pad-t-12">Jusan мобильді қосымшасын жүктеп алу үшін</p>
             </div>
         </div> 
     </div>
 </div>
-    `;
+`;
 
-    document.getElementById("footer").innerHTML = `
-    <section class="section footer-nav">
-    <div class="container">
+document.getElementById("footer").innerHTML = `
+<section class="section footer-nav">
+    <div class="uk-container">
       <div class="row justify-content-between">
         <div class="col-3 ji-body">
-          <div class="footer-color-h">ИНВЕСТОРҒА</div>
+          <div class="ji-font-18-bold">Инвесторға</div>
           <ul class="p-0">
             <li><a href="start" class="ji-link">Шот ашу</a></li>
-            <li><a href="how-to-top-up" class="ji-link">Шотты толтыру</a></li>
-            <li><a href="tariffs" class="ji-link">Тарифтер</a></li>
-            <li><a href="trading" class="ji-link">Брокерлік қызмет көрсету</a></li>
-            <li><a href="platform" class="ji-link">Сауда платформасы</a></li>
-            <li><a href="academy" class="ji-link">Academy</a></li>
-            <li><a href="https://trading.jusaninvest.kz" class="ji-link">Веб-платформа</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/how-to-top-up" class="ji-link">Шотты толтыру</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/tariffs" class="ji-link">Тарифтер</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/trading" class="ji-link">Брокерлік қызмет көрсету</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/platform" class="ji-link">Сауда платформасы</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/academy" class="ji-link">Academy</a></li>
             <li><a href="radar" class="ji-link">Radar</a></li>
+            <li><a href="magazine" class="ji-link">Журналдар</a></li>
+            <li><a href="https://trading.jusaninvest.kz" class="ji-link">Веб-платформа</a></li>
             <li><a href="https://www.jusaninvest.kz/kz/ipo.html" class="ji-link">IPO</a></li>
           </ul>
         </div>
         <div class="col-3 ji-body">
-          <div class="footer-color-h">ИПҚ-лар</div>
+          <div class="ji-font-18-bold">ИПҚ-лар</div>
           <ul class="p-0">
-            <li><a href="ipif" class="ji-link">ИПҚ-лар қалай жұмыс істейді?</a></li>
-            <li><a href="allga" class="ji-link">aIIGA</a></li>
-            <li><a href="abyroi" class="ji-link">abyROI</a></li>
-            <li><a href="allem" class="ji-link">allEM
-</a></li>
-            <li><a href="harmoney" class="ji-link">harMONEY</a></li>
-            <li><a href="dostar" class="ji-link">doSTAR</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/ipif" class="ji-link">ИПҚ-лар қалай жұмыс істейді?</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/allga" class="ji-link">allGA</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/allem" class="ji-link">allEM
+    </a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/harmoney" class="ji-link">harMONEY</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/dostar" class="ji-link">doSTAR</a></li>
           </ul>
         </div>
         <div class="col-3 ji-body">
-          <div class="footer-color-h">ЗЕЙНЕТАҚЫ АКТИВТЕРІ</div>
+          <div class="ji-font-18-bold">ЗЕЙНЕТАҚЫ АКТИВТЕРІ</div>
           <ul class="p-0">
-            <li><a href="pension#pension0" class="ji-link">Зейнетақы активтері туралы не білу керек?</a></li>
-            <li><a href="pension#pension1" class="ji-link">«Jusan Invest» АҚ-ға аударудың артықшылықтары</a></li>
-            <li><a href="pension#pension2" class="ji-link">Инвестициялау стратегиясы</a></li>
-            <li><a href="pension#pension3" class="ji-link">Табыс</a></li>
-            <li><a href="pension#pension4" class="ji-link">«Jusan Invest» АҚ-ға қалай аударуға болады?</a></li>
-            <li><a href="pension#pension5" class="ji-link">Жиі қойылатын сұрақтар</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/pension#pension0" class="ji-link">Зейнетақы активтері туралы не білу керек?</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/pension#pension1" class="ji-link">«Jusan Invest» АҚ-ға аударудың артықшылықтары</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/pension#pension2" class="ji-link">Инвестициялау стратегиясы</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/pension#pension3" class="ji-link">Табыс</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/pension#pension4" class="ji-link">«Jusan Invest» АҚ-ға қалай аударуға болады?</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/pension#pension5" class="ji-link">Жиі қойылатын сұрақтар</a></li>
           </ul>
         </div>
         <div class="col-3 ji-body">
-          <div class="footer-color-h">АҚПАРАТ</div>
+          <div class="ji-font-18-bold">Ақпарат</div>
           <ul class="p-0">
-            <li><a href="about" class="ji-link">Компания туралы</a></li>
-            <li><a href="corporate-documents" class="ji-link">Құжаттар</a></li>
-            <li><a href="about#managment" class="ji-link">Басқару</a></li>
-            <li><a href="financial-statements" class="ji-link">Қаржы есебі</a></li>
-          <!-- <li><a href="otchety-predstavitelya-derzhateley-obligaciy">Отчеты ПДО</a></li> -->
-            <li><a href="company-news" class="ji-link">Жаңалықтар</a></li>
-            <li><a href="esg" class="ji-link leaf">ESG </a></li>
-            <li><a href="contacts" class="ji-link">Байланысу үшін</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/about" class="ji-link">Компания туралы</a></li>                 
+            <li><a href="https://www.jusaninvest.kz/kz/corporate-documents" class="ji-link">Құжаттар</a></li>              
+            <li><a href="https://www.jusaninvest.kz/kz/about#managment" class="ji-link">Басқару</a></li>              
+            <li><a href="https://www.jusaninvest.kz/kz/financial-statements" class="ji-link">Қаржы есебі</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/company-news" class="ji-link">Жаңалықтар</a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/esg" class="ji-link">ESG </a></li>
+            <li><a href="https://www.jusaninvest.kz/kz/contacts" class="ji-link">Байланысу үшін</a></li>
           </ul>
         </div>
       </div>
     </div>
-</section>
-
-<section class="section footer-nav-mobile">
-    <div class="container container-max_1240">
+    </section>
+    
+  <section class="section footer-nav-mobile">
+    <div class="uk-container container-max_1240">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <div class="accordion-header footer-color-h ji-body-xs" id="headingOne">
             <button class="accordion-button check-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              ИНВЕСТОРҒА
+              Инвесторға
             </button>
           </div>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body ji-body-xs">
             <ul class="p-0">
               <li class="pt-0"><a href="start">Шот ашу</a></li>
-              <li><a href="how-to-top-up">Шотты толтыру</a></li>
-              <li><a href="tariffs">Тарифтер</a></li>
-              <li><a href="trading">Брокерлік қызмет көрсету</a></li>
-              <li><a href="platform">Сауда платформасы</a></li>
-              <!-- <li><a href="documents">Типтік формалар</a></li> -->
-              <li><a href="academy">Academy</a></li>
-              <li><a href="radar">Radar</a></li>
+              <li><a href="https://www.jusaninvest.kz/kz/how-to-top-up">Шотты толтыру</a></li>
+              <li><a href="https://www.jusaninvest.kz/kz/tariffs">Тарифтер</a></li>
+              <li><a href="https://www.jusaninvest.kz/kz/trading">Брокерлік қызмет көрсету</a></li>
+              <li><a href="https://www.jusaninvest.kz/kz/platform">Сауда платформасы</a></li>
+              <li class="d-flex"><a href="https://www.jusaninvest.kz/kz/academy">Academy</a></li>
+              <li class="d-flex"><a href="https://www.jusaninvest.kz/kz/radar">Radar</a></li>                  
               <li><a href="https://trading.jusaninvest.kz">Веб-платформа</a></li>
             </ul>
             </div>
@@ -350,19 +347,17 @@ document.getElementById("header").innerHTML = `
         <div class="accordion-item">
           <div class="accordion-header ji-body-xs footer-color-h" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              ИПҚ-лар
+            ИПҚ-лар
             </button>
           </div>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body ji-body-xs">
               <ul class="p-0">
                 <li class="p-0"><a href="ipif">ИПҚ-лар қалай жұмыс істейді?</a></li>
-                <li><a href="allga">allGA</a></li>
-                <li><a href="abyroi">abyROI</a></li>
-                <li><a href="allem">allEM
-</a></li>
-                <li><a href="harmoney">harMONEY</a></li>
-                <li><a href="dostar">doSTAR</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/allga">allGA</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/allem">allEM</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/harmoney">harMONEY</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/dostar">doSTAR</a></li>
               </ul>
             </div>
           </div>
@@ -370,17 +365,17 @@ document.getElementById("header").innerHTML = `
         <div class="accordion-item">
           <div class="accordion-header ji-body-xs footer-color-h" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              ЗЕЙНЕТАҚЫ АКТИВТЕРІ
+            ЗЕЙНЕТАҚЫ АКТИВТЕРІ
             </button>
           </div>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
             <div class="accordion-body ji-body-xs">
               <ul class="p-0">
                 <li class="p-0"><a href="pension#pension1">«Jusan Invest» АҚ-ға аударудың артықшылықтары</a></li>
-                <li><a href="pension#pension2">Инвестициялау стратегиясы</a></li>
-                <li><a href="pension#pension3">Табыс</a></li>
-                <li><a href="pension#pension4">«Jusan Invest» АҚ-ға қалай аударуға болады?</a></li>
-                <li><a href="pension#pension5">Жиі қойылатын сұрақтар</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/pension#pension2">Инвестициялау стратегиясы</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/pension#pension3">Табыс</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/pension#pension4">«Jusan Invest» АҚ-ға қалай аударуға болады?</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/pension#pension5">Жиі қойылатын сұрақтар</a></li>
               </ul>
             </div>
           </div>
@@ -388,58 +383,72 @@ document.getElementById("header").innerHTML = `
         <div class="accordion-item">
           <div class="accordion-header ji-body-xs footer-color-h" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              АҚПАРАТ
+            Ақпарат
             </button>
           </div>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body ji-body-xs">
               <ul class="p-0">
                 <li class="p-0"><a href="about">Компания туралы</a></li>
-                <li><a href="corporate-documents">Құжаттар</a></li>
-                <li><a href="about#managment">Басқару</a></li>
-                <li><a href="financial-statements">Қаржы есебі</a></li>
-               <!-- <li><a href="otchety-predstavitelya-derzhateley-obligaciy">Отчеты ПДО</a></li> -->
-                <li><a href="company-news">Жаңалықтар</a></li>
-                <li><a href="esg" class="leaf">ESG</a></li>                    
-                <li><a href="contacts">Байланысу үшін</a></li>
-              </ul>
+                <li><a href="https://www.jusaninvest.kz/kz/corporate-documents">Құжаттар</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/about#managment">Басқару</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/financial-statements">Қаржы есебі</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/company-news">Жаңалықтар</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/esg" class="leaf">ESG</a></li>
+                <li><a href="https://www.jusaninvest.kz/kz/contacts">Байланысу үшін</a></li>
+              </ul>                  
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header ji-body-xs footer-color-h" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-               Басқа
+              Прочее
             </button>
           </div>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body ji-body-xs">
               <ul class="p-0">
-                <li class="p-0"> <a href="consent-to-data-processing">Мәліметтерді жинауға және өңдеуге келісім беру</a></li>
-                <li> <a href="disclaimer">Дисклеймер</a></li>
+              <li class="p-0"> <a href="https://www.jusaninvest.kz/consent-to-data-processing">Мәліметтерді жинауға және өңдеуге келісім беру</a></li>
+              <li> <a href="https://www.jusaninvest.kz/disclaimer">Дисклеймер</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-</section>
-
-
-<section > <!--footer-info section -->
-    <div class="container"> <!--footer-info-c -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center social new">
-        <div class="d-flex flex-column flex-md-row text-center text-md-start align-items-md-center ji-body-m-15-b">
-            <a class="d-flex align-items-center ji-cool_grey ji-link" href="https://wa.me/+77072644000/?text=Добрый день!" target="_blank">
-              <img src="../../assets/img/index/whatsapp.svg" alt="whatsapp">
-              <span class="ms-2">+7 (707) 264 4000           </span>    
+  </section>
+    
+    <section > <!--footer-info section -->
+    <div class="uk-container"> <!--footer-info-c -->
+      <div class="uk-flex flex-column flex-md-row justify-content-between align-items-md-center social new">
+      <div class="text-md-start align-items-md-center ji-body-m-15-b social-number">
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link" href="https://wa.me/+77005111000/?text=Добрый день!" target="_blank">
+              <img src="../assets/img/index/whatsapp.svg" alt="whatsapp">
+              <span class="ms-2">+7 (700) 511 1000  WhatsApp</span>    
             </a>
-            <a class="d-flex align-items-center ji-cool_grey ji-link ms-md-4 mt-2 mt-md-0" href="mailto:info@jusaninvest.com" target="_blank">
-              <img src="../../assets/img/index/mailing.svg" alt="mail">
+          </div>
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="tel:+7(707)264-40-00" target="_blank">
+              <img src="../assets/img/index/whatsapp.svg" alt="whatsapp">
+              <span class="ms-2">+7 707 264 4000  звонок через банк бесплатно</span>    
+            </a>
+          </div>
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="tel:7711" target="_blank">
+              <img src="../assets/img/index/whatsapp.svg" alt="whatsapp">
+              <span class="ms-2">7711 для клиентов, находящихся в РК (круглосуточно, звонок с мобильного бесплатный)</span>    
+            </a>
+          </div>
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="mailto:info@jusaninvest.com" target="_blank">
+              <img src="../assets/img/index/mailing.svg" alt="mail">
               <span class="ms-2">info@jusaninvest.com          </span>    
             </a>
-        </div>
-        <div class="d-flex">
+          </div>
+      </div>
+        <div class="uk-flex social-cont">
           <a class="social__icon" target="_blank" href="https://www.facebook.com/jusaninvestkz">
             <img src="../../assets/img/icons/facebook-footer.svg" alt="facebook" class="img-showsocial-svg">    
             <img src="../../assets/img/facebook-footer.svg" alt="facebook" class="img-hide social-svg">   
@@ -459,10 +468,11 @@ document.getElementById("header").innerHTML = `
         </div>
       </div>        
     </div>
-      <div class="container footer-copyright">
-        <div class="d-flex flex-column-reverse justify-content-between align-items-start flex-md-row"> <!--footer-copyright-c-->
+      <div class="uk-container footer-copyright">
+        <div class=""> <!--footer-copyright-c-->
           <div class="footer-copyright-text">
-              <div class="ji-body-xxs ji-cool_grey"> “First Heartland Jusan Invest” Акционерлік Қоғамы 2004-2023  <br> ҚНРДА №3.2.239/16 лицензиясы, 25.06.2021 жыл   </div>
+              <div class="ji-body-xxs ji-cool_grey">“First Heartland Jusan Invest” Акционерлік Қоғамы 2004-2024<br>
+              ҚНРДА №3.2.239/16 лицензиясы, 25.06.2021 жыл</div>
             </div>
           <div class="footer-after-nav-text text-center d-none d-xs-block d-lg-block">
             <a href="disclaimer" class="ji-body-xs ms-2 ji-cool_grey ji-link">Дисклеймер</a>
@@ -471,4 +481,19 @@ document.getElementById("header").innerHTML = `
         </div>
       </div>
     </section>
-`
+
+    <div id="myModal" class="modal">
+    <div class="modal-content modal-qr">        
+      <div class="modal-header">
+        <button type="button" class="btn-close close" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="style/img/qr-small.png" alt="qr">
+        <div class="info-block">
+          <p class="info-block-title">Камераны QR-кодқа қаратыңыз</p><p class="info-block-text">Jusan мобильді қосымшасын жүктеп алу үшін</p>
+        </div>
+    </div>
+  </div>
+  </div>
+    
+    `

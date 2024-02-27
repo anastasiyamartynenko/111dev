@@ -1,4 +1,3 @@
-
 document.getElementById("header").innerHTML = `
  
 <header class="bg-white">
@@ -19,7 +18,7 @@ document.getElementById("header").innerHTML = `
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/pension" class="header-links">Пенсионные активы</a></li> 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/junior" class="header-links">Junior</a></li> 
                 <li class="uk-parent"><a href="#" class="header-links"> Еще</a>
-                <div class="uk-dropdown header-links-dropdown">
+                <div uk-dropdown class="header-links-dropdown">
                   <div class="uk-child-width-1-1">
                       <div>
                           <ul class="uk-nav uk-dropdown-nav">
@@ -166,7 +165,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">                  
-                  <div style="color:#898D94; padding: 15px 0 7.5px 0">Инвестору</div>                
+                  <div style="color:#898D94; padding: 25px 0 7px 0">Инвестору</div>                
               </div>
             </div>
             <div class="accordion-item">
@@ -199,7 +198,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">                  
-                  <div style="color:#898D94; padding: 15px 0 7.5px 0">Информация</div>                
+                  <div style="color:#898D94; padding: 25px 0 7px 0">Информация</div>                
               </div>
             </div>
             <div class="accordion-item">
@@ -291,7 +290,6 @@ document.getElementById("footer").innerHTML = `
           <ul class="p-0">
             <li><a href="ipif" class="ji-link">Как работают ПИФы?</a></li>
             <li><a href="allga" class="ji-link">allGA</a></li>
-            <li><a href="abyroi" class="ji-link">abyROI</a></li>
             <li><a href="allem" class="ji-link">allEM
     </a></li>
             <li><a href="harmoney" class="ji-link">harMONEY</a></li>
@@ -363,7 +361,6 @@ document.getElementById("footer").innerHTML = `
               <ul class="p-0">
                 <li class="p-0"><a href="ipif">Как работают ПИФы?</a></li>
                 <li><a href="allga">allGA</a></li>
-                <li><a href="abyroi">abyROI</a></li>
                 <li><a href="allem">allEM</a></li>
                 <li><a href="harmoney">harMONEY</a></li>
                 <li><a href="dostar">doSTAR</a></li>
@@ -432,18 +429,34 @@ document.getElementById("footer").innerHTML = `
     
     <section > <!--footer-info section -->
     <div class="uk-container"> <!--footer-info-c -->
-      <div class="uk-flex flex-md-row justify-content-between align-items-md-center social new">
-        <div class="uk-flex flex-column flex-md-row text-center text-md-start align-items-md-center ji-body-m-15-b social-number">
-            <a class="uk-flex align-items-center ji-cool_grey ji-link" href="https://wa.me/+77072644000/?text=Добрый день!" target="_blank">
-              <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
-              <span class="ms-2">+7 (707) 264 4000           </span>    
-            </a>
-            <a class="uk-flex align-items-center ji-cool_grey ji-link ms-md-4 mt-2 mt-md-0" href="mailto:info@jusaninvest.com" target="_blank">
-              <img src="./assets/img/index/mailing.svg" alt="mail">
-              <span class="ms-2">info@jusaninvest.com          </span>    
-            </a>
+      <div class="uk-flex flex-column flex-md-row justify-content-between align-items-md-center social new">
+        <div class="text-md-start align-items-md-center ji-body-m-15-b social-number">
+            <div>
+              <a class="uk-flex align-items-center ji-cool_grey ji-link" href="https://wa.me/+77005111000/?text=Добрый день!" target="_blank">
+                <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
+                <span class="ms-2">+7 (700) 511 1000  WhatsApp</span>    
+              </a>
+            </div>
+            <div>
+              <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="tel:+7(707)264-40-00" target="_blank">
+                <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
+                <span class="ms-2">+7 707 264 4000  звонок через банк бесплатно</span>    
+              </a>
+            </div>
+            <div>
+              <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="tel:7711" target="_blank">
+                <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
+                <span class="ms-2">7711 для клиентов, находящихся в РК (круглосуточно, звонок с мобильного бесплатный)</span>    
+              </a>
+            </div>
+            <div>
+              <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="mailto:info@jusaninvest.com" target="_blank">
+                <img src="./assets/img/index/mailing.svg" alt="mail">
+                <span class="ms-2">info@jusaninvest.com          </span>    
+              </a>
+            </div>
         </div>
-        <div class="uk-flex">
+        <div class="uk-flex social-cont">
           <a class="social__icon" target="_blank" href="https://www.facebook.com/jusaninvestkz">
             <img src="assets/img/icons/facebook-footer.svg" alt="facebook" class="img-showsocial-svg">    
             <img src="assets/img/facebook-footer.svg" alt="facebook" class="img-hide social-svg">   
@@ -470,7 +483,7 @@ document.getElementById("footer").innerHTML = `
             <a href="disclaimer" class="ji-cool_grey ji-link border-link">Дисклеймер</a>
             <a href="consent-to-data-processing" class="ms-2 ji-cool_grey ji-link border-link">Политика конфиденциальности</a>
           </div>
-              <div class="ji-body-xxs ji-cool_grey">© 2004–2023 Акционерное общество «First Heartland Jusan Invest» Лицензия АРРФР №3.2.239/16 от 25.06.2021  </div>
+              <div class="ji-body-xxs ji-cool_grey">© 2004–2024 Акционерное общество «First Heartland Jusan Invest» Лицензия АРРФР №3.2.239/16 от 25.06.2021  </div>
             </div>
           
         </div>

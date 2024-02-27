@@ -11,20 +11,19 @@ document.getElementById("header").innerHTML = `
             </div>
             <div>
               <ul class="uk-subnav header-links-cont uk-visible@m">
-                <li class="uk-parent"><a href="https://www.jusaninvest.kz/tariffs" class="header-links"> Тарифы</a></li> 
-                <li class="uk-parent"><a href="https://www.jusaninvest.kz/demo" class="header-links"> Демо-счет</a></li> 
+                <li class="uk-parent"><a href="https://www.jusaninvest.kz/tariffs" class="header-links"> Тарифы</a></li>                 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/academy" class="header-links">Academy</a></li> 
+                <li class="uk-parent"><a href="https://www.jusaninvest.kz/demo" class="header-links"> Демо-счет</a></li> 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/ipif" class="header-links"> ПИФ</a></li> 
                 <li class="uk-parent"><a href="https://www.jusaninvest.kz/pension" class="header-links">Пенсионные активы</a></li> 
-                <li class="uk-parent"><a href="https://www.jusaninvest.kz/junior" class="header-links">Junior</a></li> 
+                <li><a href="https://www.jusaninvest.kz/radar" class="ji-body-s ji-link"> Radar</a></li>                
                 <li class="uk-parent"><a href="#" class="header-links"> Еще</a>
-                <div class="uk-dropdown header-links-dropdown">
+                <div uk-dropdown class="uk-dropdown header-links-dropdown">
                   <div class="uk-child-width-1-1" >
                       <div>
                           <ul class="uk-nav uk-dropdown-nav">
-                              <li><a href="https://www.jusaninvest.kz/radar" class="ji-body-s ji-link"> Radar</a></li>
+                          <li class="uk-parent"><a href="https://www.jusaninvest.kz/junior" class="header-links">Junior</a></li>                               
                               <li><a href="https://www.jusaninvest.kz/analytic" class="ji-body-s ji-link"> Аналитика</a></li> 
-
                               <li class="ji-midle header-links-link">Инвестору</li>
                               <li><a href="https://trading.jusaninvest.kz" class="ji-body-s ji-link">Веб-платформа</a></li>
                               <li><a href="https://www.jusaninvest.kz/how-to-top-up" class="ji-body-s ji-link">Пополнить счет</a></li>
@@ -164,7 +163,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">                  
-                  <div style="color:#898D94; padding: 15px 0 7.5px 0">Инвестору</div>                
+                  <div style="color:#898D94; padding: 25px 0 7px 0">Инвестору</div>                
               </div>
             </div>
             <div class="accordion-item">
@@ -197,7 +196,7 @@ document.getElementById("header").innerHTML = `
             </div>
             <div class="accordion-item">
               <div class="accordion-header ji-body-xs footer-color-h">                  
-                  <div style="color:#898D94; padding: 15px 0 7.5px 0">Информация</div>                
+                  <div style="color:#898D94; padding: 25px 0 7px 0">Информация</div>                
               </div>
             </div>
             <div class="accordion-item">
@@ -288,9 +287,7 @@ document.getElementById("footer").innerHTML = `
           <ul class="p-0">
             <li><a href="https://www.jusaninvest.kz/ipif" class="ji-link">Как работают ПИФы?</a></li>
             <li><a href="https://www.jusaninvest.kz/allga" class="ji-link">allGA</a></li>
-            <li><a href="https://www.jusaninvest.kz/abyroi" class="ji-link">abyROI</a></li>
-            <li><a href="https://www.jusaninvest.kz/allem" class="ji-link">allEM
-    </a></li>
+            <li><a href="https://www.jusaninvest.kz/allem" class="ji-link">allEM </a></li>
             <li><a href="https://www.jusaninvest.kz/harmoney" class="ji-link">harMONEY</a></li>
             <li><a href="https://www.jusaninvest.kz/dostar" class="ji-link">doSTAR</a></li>
           </ul>
@@ -429,18 +426,34 @@ document.getElementById("footer").innerHTML = `
     
     <section > <!--footer-info section -->
     <div class="uk-container"> <!--footer-info-c -->
-      <div class="uk-flex flex-md-row justify-content-between align-items-md-center social new">
-        <div class="uk-flex flex-column flex-md-row text-center text-md-start align-items-md-center ji-body-m-15-b">
-            <a class="uk-flex align-items-center ji-cool_grey ji-link" href="https://wa.me/+77072644000/?text=Добрый день!" target="_blank">
-              <img src="../assets/img/index/whatsapp.svg" alt="whatsapp">
-              <span class="ms-2">+7 (707) 264 4000           </span>    
+      <div class="uk-flex flex-column flex-md-row justify-content-between align-items-md-center social new">
+      <div class="text-md-start align-items-md-center ji-body-m-15-b social-number">
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link" href="https://wa.me/+77005111000/?text=Добрый день!" target="_blank">
+              <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
+              <span class="ms-2">+7 (700) 511 1000  WhatsApp</span>    
             </a>
-            <a class="uk-flex align-items-center ji-cool_grey ji-link ms-md-4 mt-2 mt-md-0" href="mailto:info@jusaninvest.com" target="_blank">
-              <img src="../assets/img/index/mailing.svg" alt="mail">
+          </div>
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="tel:+7(707)264-40-00" target="_blank">
+              <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
+              <span class="ms-2">+7 707 264 4000  звонок через банк бесплатно</span>    
+            </a>
+          </div>
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="tel:7711" target="_blank">
+              <img src="./assets/img/index/whatsapp.svg" alt="whatsapp">
+              <span class="ms-2">7711 для клиентов, находящихся в РК (круглосуточно, звонок с мобильного бесплатный)</span>    
+            </a>
+          </div>
+          <div>
+            <a class="uk-flex align-items-center ji-cool_grey ji-link mt-3" href="mailto:info@jusaninvest.com" target="_blank">
+              <img src="./assets/img/index/mailing.svg" alt="mail">
               <span class="ms-2">info@jusaninvest.com          </span>    
             </a>
-        </div>
-        <div class="uk-flex">
+          </div>
+      </div>
+        <div class="uk-flex social-cont">
           <a class="social__icon" target="_blank" href="https://www.facebook.com/jusaninvestkz">
             <img src="../assets/img/icons/facebook-footer.svg" alt="facebook" class="img-showsocial-svg">    
             <img src="../assets/img/facebook-footer.svg" alt="facebook" class="img-hide social-svg">   
@@ -463,7 +476,7 @@ document.getElementById("footer").innerHTML = `
       <div class="uk-container footer-copyright">
         <div class=""> <!--footer-copyright-c-->
           <div class="footer-copyright-text">
-              <div class="ji-body-xxs ji-cool_grey">© 2004–2023 Акционерное общество «First Heartland Jusan Invest» Лицензия АРРФР №3.2.239/16 от 25.06.2021  </div>
+              <div class="ji-body-xxs ji-cool_grey">© 2004–2024 Акционерное общество «First Heartland Jusan Invest» Лицензия АРРФР №3.2.239/16 от 25.06.2021  </div>
             </div>
           <div class="footer-after-nav-text text-center d-none d-xs-block d-lg-block">
             <a href="disclaimer" class="ji-body-xs ms-2 ji-cool_grey ji-link">Дисклеймер</a>
