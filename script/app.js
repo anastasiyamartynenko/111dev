@@ -1,5 +1,5 @@
 $(document).ready(function(){    
-    var autoplayInterval = 3000; // Продолжительность интервала автовоспроизведения в миллисекундах
+    var autoplayInterval = 4500; // Продолжительность интервала автовоспроизведения в миллисекундах
     var autoplayIntervalID; // Идентификатор интервала автовоспроизведения
     var animationStartTime; // Время начала анимации индикатора выполнения
     var progressAnimationDuration; // Продолжительность анимации индикатора выполнения
@@ -108,7 +108,7 @@ $(document).ready(function(){
 
 //* Слайд "Первое правило инвестиций *//
 $(document).ready(function(){    
-    var autoplayInterval = 3000; // Продолжительность интервала автовоспроизведения в миллисекундах
+    var autoplayInterval = 4500; // Продолжительность интервала автовоспроизведения в миллисекундах
     var autoplayIntervalID; // Идентификатор интервала автовоспроизведения
     var animationStartTime; // Время начала анимации индикатора выполнения
     var progressAnimationDuration; // Продолжительность анимации индикатора выполнения
