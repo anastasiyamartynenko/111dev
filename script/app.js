@@ -39,7 +39,7 @@ $(document).ready(function(){
         showProgress($nextBlock);
 
         // Скрыть индикатор выполнения предыдущего блока
-        var $prevBlock = $(".block-sl-" + (currentActive + 5));
+        var $prevBlock = $(".block-sl-" + (currentActive + 1));
         hideProgress($prevBlock);
 
          // Для мобильных устройств
@@ -72,7 +72,25 @@ $(document).ready(function(){
             $progressBar.css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
         }
     });
-});
+    // Для мобильных устройств
+    if ($(window).width() <= 767) {
+        $(".block-sl").on('touchstart', function(event) {
+            event.preventDefault(); // предотвращаем стандартное поведение при касании
+            if ($(this).hasClass("active")) {
+                isPaused = !isPaused;
+                var $progressBar = $(this).find(".block-sl-progress");
+                if (isPaused) {
+                    $progressBar.data("wasRunning", $progressBar.css("animation-play-state") === "running");
+                    $progressBar.css("animation-play-state", "paused");
+                } else {
+                    if ($progressBar.data("wasRunning")) {
+                        $progressBar.css("animation-play-state", "running"); // Возобновить анимацию индикатора выполнения
+                    }
+                }
+            }
+        });
+    }
+    });
 
 //* Слайд "Максимум возможностей" *//
 // $(document).ready(function(){
